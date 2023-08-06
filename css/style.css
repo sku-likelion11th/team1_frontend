@@ -12,10 +12,9 @@
 
 body {
   background-color: rgb(255, 255, 255);
-  overflow: hidden;
 }
+
 .display-container {
-  width: 1300px;
   margin-left: auto;
   margin-right: auto;
   min-height: 100vh;

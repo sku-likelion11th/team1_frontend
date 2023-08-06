@@ -9,6 +9,8 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/login.css" />
     <title>MyMy</title>
@@ -16,32 +18,44 @@
   <body>
     <div class="display-container text-center">
       <section id="login">
-        <div>MYMY 2023</div>
-        <form id="login-form ">
-          <div class="nickname d-flex justify-content-center">
-            <div>닉네임 :</div>
-            <input
-              type="text"
-              name="nickname"
-              id="nickname-field"
-              class="login-form-field"
-              placeholder="닉네임"
-            />
+        <div class="title font-bitbit text-center">
+          <div class="main-title">MYMY 2023</div>
+          <div class="sub-tile">사랑하는 사람에게 보내는 메세지</div>
+          <div class="heart_json">
+            <lottie-player
+              src="../js/json/animation_heart.json"
+              background="transparent"
+              speed="0.6"
+              loop
+              autoplay
+            ></lottie-player>
           </div>
-          <div class="password d-flex justify-content-center">
-            <div>비밀번호 :</div>
+        </div>
+
+        <form action="" method="POST">
+          <div class="input-box">
             <input
+              id="username"
+              type="text"
+              name="username"
+              placeholder="아이디"
+            />
+            <label for="username">아이디</label>
+          </div>
+
+          <div class="input-box">
+            <input
+              id="password"
               type="password"
               name="password"
-              id="password-field"
-              class="login-form-field"
               placeholder="비밀번호"
             />
-            <input type="submit" value="완료" id="login-form-submit" />
+            <label for="password">비밀번호</label>
           </div>
+          <div id="forgot" class="mt-5">비밀번호 찾기</div>
+          <div id="join">아직 회원이 아니신가요? 회원가입하기</div>
+          <input type="submit" value="로그인" />
         </form>
-        <div>아직 회원이 아니신가요? 회원가입하러가기</div>
-        <div>비밀번호 찾기</div>
       </section>
     </div>
     <script
