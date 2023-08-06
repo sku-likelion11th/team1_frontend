@@ -1,0 +1,23 @@
+/* 공용 css 파일입니다. */
+
+/* font */
+@font-face {
+  font-family: "bitbit";
+  src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
+    url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
+}
+.font-bitbit {
+  font-family: "bitbit";
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+}
+.display-container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 100vh;
+  position: relative;
+}

@@ -1,0 +1,88 @@
+/* font */
+
+.display-container {
+  background-image: url("../source/img/bg_brick.png");
+  background-color: rgb(255, 255, 255);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.window {
+  grid-area: window;
+}
+.radio_shelf {
+  grid-area: radio_shelf;
+}
+.title {
+  grid-area: title;
+}
+.button {
+  grid-area: button;
+}
+.area {
+  display: grid;
+  grid-template-areas:
+    "window window radio_shelf"
+    "window window title "
+    "window window button";
+}
+.window img:nth-child(1) {
+  width: 487px;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+.window img:nth-child(2) {
+  width: 487px;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+.radio img {
+  width: 300px;
+  margin-top: 236px;
+  margin-left: 200px;
+}
+.shelf img {
+  width: 386px;
+  position: absolute;
+  top: 378px;
+  right: 220px;
+}
+.title {
+  margin-right: 60px;
+}
+.sub-title {
+  color: #a0c49d;
+  font-size: 20px;
+}
+.main-title {
+  position: relative;
+  font-size: 60px;
+  color: #a0c49d;
+}
+.button {
+  margin-bottom: 130px;
+}
+.bttn {
+  width: 309px;
+  border: 4px solid #c86b6b;
+  font-size: 26px;
+}
+
+a {
+  text-decoration: none;
+  color: #c86b6b;
+}
+p {
+  color: white;
+}
+button {
+  font-size: 20px;
+  border: 5px solid rgb(61, 61, 61);
+  border-radius: 30px;
+  height: 70px;
+  margin-right: 60px;
+}
