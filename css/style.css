@@ -6,8 +6,18 @@
   src: url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff"),
     url("//cdn.df.nexon.com/img/common/font/DNFBitBit-Regular.woff2");
 }
+@font-face {
+  font-family: "NeoDunggeunmo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.3/NeoDunggeunmo.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 .font-bitbit {
   font-family: "bitbit";
+}
+.font-NeoDunggeunmo {
+  font-family: "NeoDunggeunmo";
 }
 
 body {
