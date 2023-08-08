@@ -1,0 +1,33 @@
+.display-container {
+  background-image: url("../source/img/bg_brick.png");
+  background-color: rgb(255, 255, 255);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.main-title {
+  padding-top: 40px;
+  font-size: 50px;
+  color: #a0c49d;
+  text-shadow: 3px 2px 2px gray;
+}
+.tape-shelf {
+  position: relative;
+}
+
+.tape img {
+  height: 182px;
+
+  z-index: 1;
+}
+.shelf img {
+  height: 62px;
+}
+.open-radio img {
+  margin-top: 80px;
+  height: 230px;
+}
+.sharing {
+  font-size: 30px;
+  margin-right: 30px;
+}

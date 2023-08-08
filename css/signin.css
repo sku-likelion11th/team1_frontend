@@ -2,12 +2,10 @@
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  width: 1100px;
 }
 
 .main-title {
-  padding-top: 130px;
-
+  padding-top: 40px;
   font-size: 60px;
   color: #a0c49d;
   text-shadow: 3px 2px 2px gray;
