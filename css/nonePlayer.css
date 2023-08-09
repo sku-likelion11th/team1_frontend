@@ -3,7 +3,7 @@
   border-radius: 9px;
   border: 1px solid #86737d;
   width: 1300px;
-  height: 950px;
+  height: 750px;
   margin: 25px auto;
   position: relative;
 }
@@ -100,4 +100,24 @@ hr {
   margin-right: auto;
   position: relative;
   top: 530px;
+}
+button {
+  margin: 0 15px 0 15px;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 23px;
+  color: #ffffff;
+  border: solid 2px black;
+}
+
+.bttn {
+  position: relative;
+  top: 273px;
+}
+.bttn :nth-child(1) {
+  background-color: #e06864;
+}
+.bttn :nth-child(2) {
+  background-color: #2a8eb5;
 }

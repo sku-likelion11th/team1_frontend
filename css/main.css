@@ -1,63 +1,71 @@
 .display-container {
-  background-image: url("../source/img/bg_brick.png");
-  background-color: rgb(255, 255, 255);
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+.bookcover {
+  background-color: #b4d1da;
+  border-radius: 9px;
+  border: 1px solid #86737d;
+  width: 1300px;
+  height: 750px;
+  margin: 25px auto;
+  position: relative;
+}
 
-.window {
-  grid-area: window;
-}
-.radio_shelf {
-  grid-area: radio_shelf;
-}
-.title {
-  grid-area: title;
-}
-
-.area {
-  display: grid;
-  grid-template-areas:
-    "window window radio_shelf"
-    "window window title"
-    "window window title";
-}
-.window img:nth-child(1) {
-  width: 487px;
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
   position: absolute;
-  top: 150px;
-  left: 100px;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.window img:nth-child(1) {
+  width: 364px;
+  position: absolute;
+  top: 190px;
+  left: 199px;
 }
 .window img:nth-child(2) {
-  width: 487px;
+  width: 364px;
   position: absolute;
-  top: 150px;
-  left: 100px;
+  top: 190px;
+  left: 199px;
 }
 
 .radio img {
   width: 300px;
-  margin-top: 236px;
-  margin-left: 363px;
+  position: relative;
+  top: 44px;
+  left: 662px;
+  z-index: 1;
 }
 .shelf img {
   width: 386px;
   position: absolute;
-  top: 378px;
-  right: 105px;
+  top: 329px;
+  left: 619px;
 }
 .title {
-  margin-right: -230px;
-  margin-bottom: 300px;
+  background-color: white;
+  width: 1235px;
+  height: 144px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
-
 .main-title {
   position: relative;
   font-size: 60px;
   color: #a0c49d;
-  margin-top: 70px;
   text-shadow: 3px 2px 2px gray;
+}
+.sub-tile {
+  font-size: 24px;
+  color: #a0c49d;
 }
 
 .bttn {
@@ -76,9 +84,20 @@ button {
   border: 5px solid rgb(61, 61, 61);
   border-radius: 30px;
   height: 70px;
+  position: relative;
+  left: 645px;
+  top: 232px;
+  background-color: #ffffff;
 }
+.area2 {
+  background-color: white;
+  width: 1235px;
+  height: 521px;
+  border-radius: 10px;
+}
+
 .voice_json {
   position: absolute;
-  bottom: 160px;
-  right: 150px;
+  left: 652px;
+  bottom: 158px;
 }
