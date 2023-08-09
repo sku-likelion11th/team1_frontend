@@ -1,3 +1,6 @@
+.display-container {
+  overflow: hidden;
+}
 .bookcover {
   background-color: #b4d1da;
   border-radius: 9px;
@@ -23,9 +26,16 @@
   background-color: #ffffff;
   border-radius: 9px;
   height: 721px;
-  background-image: url("../source/img/bg_squared-paper-texture.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  overflow: hidden;
+
+  background: radial-gradient(
+    ellipse at center,
+    rgba(255, 254, 234, 1) 0%,
+    rgba(255, 254, 234, 1) 35%,
+    #b7e8eb 100%
+  );
 }
 .page > img {
   height: 250px;
@@ -42,8 +52,8 @@
   color: white;
   bottom: 0;
   margin-top: 100px;
-
-  box-shadow: 5px 5px 5px 5px gray;
+  box-shadow: 5px 5px 5px 5px gray inset;
+  border: 1px solid black;
 }
 .input-text {
   color: black;
@@ -59,15 +69,15 @@
 }
 .filmstripe-top {
   position: absolute;
-  width: 500px;
+  width: 499px;
   height: 20px;
   top: 55px;
 }
 .filmstripe-bottom {
   position: absolute;
-  width: 500px;
+  width: 499px;
   height: 20px;
-  bottom: 70px;
+  bottom: 68px;
 }
 
 .input-text p {
@@ -108,4 +118,51 @@ button {
   margin-top: 10px;
   border: 1px solid #565966;
   background: linear-gradient(#e4eeff, #a8c8ff, #e4eeff);
+}
+/* waterDrop */
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
 }
