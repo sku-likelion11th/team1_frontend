@@ -1,0 +1,111 @@
+.bookcover {
+  background-color: #b4d1da;
+  border-radius: 9px;
+  border: 1px solid #86737d;
+  width: 1300px;
+  height: 790px;
+  margin: 25px auto;
+  position: relative;
+}
+
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.page {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 9px;
+  height: 721px;
+  background-image: url("../source/img/bg_squared-paper-texture.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.page > img {
+  height: 250px;
+  position: absolute;
+  z-index: 2;
+  top: 0px;
+}
+.input-box {
+  position: relative;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  border-radius: 9px;
+  height: 500px;
+  width: 500px;
+  color: white;
+  bottom: 0;
+  margin-top: 100px;
+
+  box-shadow: 5px 5px 5px 5px gray;
+}
+.input-text {
+  color: black;
+  background-color: white;
+  margin-top: 75px;
+  height: 355px;
+}
+.title {
+  padding-top: 23px;
+}
+.input-text p {
+  margin-left: 30px;
+}
+.filmstripe-top {
+  position: absolute;
+  width: 500px;
+  height: 20px;
+  top: 55px;
+}
+.filmstripe-bottom {
+  position: absolute;
+  width: 500px;
+  height: 20px;
+  bottom: 70px;
+}
+
+.input-text p {
+  margin-bottom: 0px;
+}
+textarea {
+  width: 80%;
+  height: 100px;
+  border: solid 1px #5c5c5c;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  margin-left: 33px;
+}
+input:nth-child(1) {
+  width: 80%;
+  height: 40px;
+  border: solid 1px #5c5c5c;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-left: 33px;
+}
+input:nth-child(2) {
+  width: 80%;
+  height: 40px;
+  font-size: 16px;
+  margin-left: 33px;
+}
+
+.bttn {
+  margin: 45px 20px 0 0;
+}
+button {
+  width: 80px;
+  height: 40px;
+  border-radius: 3px;
+  margin-left: 6px;
+  margin-top: 10px;
+  border: 1px solid #565966;
+  background: linear-gradient(#e4eeff, #a8c8ff, #e4eeff);
+}

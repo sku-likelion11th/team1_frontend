@@ -101,3 +101,13 @@ hr {
   position: relative;
   top: 530px;
 }
+.next-bttn img {
+  position: absolute;
+  left: 1079px;
+  height: 190px;
+}
+.back-bttn img {
+  position: relative;
+  right: 46px;
+  height: 190px;
+}
