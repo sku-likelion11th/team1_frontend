@@ -5,6 +5,7 @@
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  background-color: rgba(255, 255, 255, 0.2); /* 어두운 투명 배경 색상 */
 }
 .help {
   position: relative;
@@ -13,7 +14,13 @@
   z-index: 35;
 }
 .helpTv {
-  height: 700px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 40%;
 }
 
 /* hamburger */
@@ -54,7 +61,7 @@
   z-index: 1500;
   opacity: 0;
   transition: all 0.8s;
-  background-image: url("../source/img/bg_brick.png");
+  background-image: url("");
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -141,13 +148,4 @@
 .checkbox:checked + .button .icon::after {
   top: 0;
   transform: rotate(-135deg);
-}
-.helpTv {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  list-style: none;
-  text-align: center;
-  width: 50%;
 }
