@@ -1,20 +1,21 @@
-const modal = document.getElementById("modal");
+const tapeImages = document.querySelectorAll(".modal-on");
 const modalOverlay = document.getElementById("modal-overlay");
+const closeBtn = modal.querySelector(".close-area");
+
+tapeImages.forEach((image) => {
+  image.addEventListener("click", () => {
+    modalOn();
+  });
+});
+
 function modalOn() {
   modal.style.display = "flex";
   modalOverlay.style.display = "block";
 }
-function isModalOn() {
-  return modal.style.display === "flex";
-}
 function modalOff() {
   modalOverlay.style.display = "none";
 }
-const btnModal = document.getElementById("btn-modal");
-btnModal.addEventListener("click", (e) => {
-  modalOn();
-});
-const closeBtn = modal.querySelector(".close-area");
+
 closeBtn.addEventListener("click", (e) => {
   modalOff();
 });

@@ -10,7 +10,7 @@
   position: relative;
   top: 0;
   left: 803px;
-  z-index: 35;
+  z-index: 300;
 }
 .helpTv {
   position: absolute;
@@ -105,7 +105,6 @@
   right: 0;
 }
 
-/*  */
 /* styling hamb ICON */
 .icon {
   position: absolute;

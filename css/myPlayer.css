@@ -73,7 +73,7 @@
   height: 182px;
   position: relative;
   top: 40px;
-  z-index: 1;
+  z-index: 100;
 }
 .shelf img {
   height: 62px;
@@ -116,7 +116,7 @@ hr {
   position: fixed;
   bottom: 32px;
   margin-left: 10px;
-  z-index: 2000;
+  z-index: 10;
 }
 .share-btn {
   position: relative;
@@ -160,7 +160,7 @@ hr {
   opacity: 0;
   transition: 0.5s;
   transition-delay: 0s;
-  font-size: 20px;
+  font-size: 26px;
   text-transform: capitalize;
   border-bottom: 1px solid #fff;
   width: fit-content;
@@ -202,7 +202,7 @@ hr {
   height: 100%;
   width: 25%;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .share-options.active .title,
