@@ -52,8 +52,8 @@
 
 .content-title-url {
   flex: 1;
-  font-size: 0.5rem; /* 적용한 폰트 특성 상 사이즈가 커서 font-size 조정 */
-  text-align: end; /* 텍스트 우측 정렬 */
+  font-size: 0.5rem;
+  text-align: end;
 }
 .tape-shelf-box {
   position: absolute;
@@ -110,4 +110,105 @@ hr {
   position: relative;
   right: 46px;
   height: 190px;
+}
+/*share button*/
+.share-container {
+  position: fixed;
+  bottom: 32px;
+  margin-left: 10px;
+  z-index: 2000;
+}
+.share-btn {
+  position: relative;
+  border: none;
+  background: #fff;
+  color: #f0a3a1;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  padding-right: 3px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 0rem 0.4rem rgb(172, 117, 117);
+}
+
+.share-options {
+  position: absolute;
+  width: auto;
+  height: auto;
+  transform-origin: bottom left;
+  transform: scale(0);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #6c353573;
+  bottom: 50%;
+  left: 50%;
+  color: #fff;
+  padding: 20px;
+  font-family: "roboto";
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.share-options.active {
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+.title {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  font-size: 20px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  padding: 0 20px 3px 0;
+}
+
+.link-container {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.bi-share-fill {
+  font-size: 30px;
+  margin-right: 6px;
+}
+.link {
+  width: 80%;
+  height: 100%;
+  line-height: 55px;
+  color: #f0a3a1;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background: #f0a3a1;
+  color: #fff;
+  border: none;
+  height: 100%;
+  width: 25%;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.share-options.active .title,
+.share-options.active .social-media,
+.share-options.active .link-container {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
 }
