@@ -12,9 +12,11 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/myPlayer.css" />
     <link rel="stylesheet" href="../css/help.css" />
+    <link rel="stylesheet" href="./css/modle.css" />
     <title>MYMY</title>
   </head>
   <body>
+    <button id="btn-modal">모달 열기</button>
     <!-- page -->
     <div class="bookcover">
       <div class="bookdot">
@@ -104,9 +106,47 @@
         </div>
       </div>
     </div>
+    <!-- modal -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="input-box font-NeoDunggeunmo" id="modal">
+        <div class="modal-window">
+          <div class="top-color">
+            <div class="close-area">X</div>
+          </div>
 
+          <div class="d-flex flex-column align-items-center">
+            <div class="radio">
+              <div class="musicNote">
+                <lottie-player
+                  src="./js/json/animation_volume.json"
+                  background="transparent"
+                  speed="1"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+
+              <img src="./source/img/radio.png" />
+            </div>
+            <div class="info d-flex flex-column align-items-center">
+              <div class="title">제목: 해커톤 MYMY 파이팅!!</div>
+              <div class="sender">보낸사람 : 박시은</div>
+              <audio controls class="mt-4">
+                <source
+                  src="https://ccrma.stanford.edu/~jos/mp3/harpsi-cs.mp3"
+                  type="audio/mp3"
+                />
+                재생 오류
+              </audio>
+              <hr class="hr-bottom" />
+              <div class="sentance mt-4">음성과 함께 나오는 텍스트입니다.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!--  -->
-    <script src="./js/tapemove.js"></script>
+    <script src="./js/modal.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
