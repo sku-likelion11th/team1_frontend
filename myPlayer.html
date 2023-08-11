@@ -92,23 +92,23 @@
                 </div>
               </form>
             </div>
-            <!--share button-->
-            <div class="share-container">
-              <button class="share-btn">
-                <i class="bi bi-share-fill"></i>
-              </button>
-              <div class="share-options">
-                <p class="title font-bitbit">공유</p>
-                <div class="link-container">
-                  <p class="link font-bitbit">
-                    http://127.0.0.1:3000/test_help.html
-                  </p>
-                  <button class="copy-btn font-bitbit" id="toastStart">
-                    <a href="#" onclick="clip(); return false;">복사</a>
-                  </button>
-                </div>
+
+            <!-- 달력 -->
+            <form autocomplete="off">
+              <div class="form-group">
+                <input
+                  type="text"
+                  id="dp1"
+                  class="datepicker mr-2"
+                  placeholder="Select Date"
+                  name="date"
+                />
+                <button type="submit" class="calendar-btn btn-info font-bitbit">
+                  결정
+                </button>
               </div>
-            </div>
+            </form>
+
             <!-- page -->
             <section
               class="tape-shelf-box justify-content-center d-flex text-center"

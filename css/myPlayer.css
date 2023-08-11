@@ -48,6 +48,7 @@
 .content-title-name {
   font-size: 30px;
   padding-bottom: 20px;
+  margin-right: 30px;
 }
 
 .content-title-url {
@@ -111,8 +112,8 @@ hr {
   right: 46px;
   height: 190px;
 }
-/*달력*/
 
+/*---------calendar---------*/
 .input {
   padding: 10px 20px 10px 20px;
   border: 1px solid lightgrey !important;
@@ -226,7 +227,7 @@ thead tr:nth-child(3) th {
   width: 50%;
 }
 
-/*share button*/
+/*---------share button---------*/
 .share-container {
   position: fixed;
   bottom: 32px;
@@ -261,7 +262,6 @@ thead tr:nth-child(3) th {
   left: 50%;
   color: #fff;
   padding: 20px;
-  font-family: "roboto";
   transition: 0.5s;
   transition-delay: 0.5s;
 }
