@@ -29,29 +29,17 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
+  background: linear-gradient(#f5eee8, #ffdfdf, #f5eee8);
+}
 
-  background: radial-gradient(
-    ellipse at center,
-    rgba(255, 254, 234, 1) 0%,
-    rgba(255, 254, 234, 1) 35%,
-    #b7e8eb 100%
-  );
-}
-.page > img {
-  height: 250px;
-  position: absolute;
-  z-index: 2;
-  top: 0px;
-}
 .input-box {
   position: relative;
   background-color: hsla(0, 0%, 0%, 0.8);
   border-radius: 9px;
-  height: 500px;
+  height: 480px;
   width: 500px;
   color: white;
   bottom: 0;
-  margin-top: 100px;
   box-shadow: 5px 5px 5px 5px gray inset;
   border: 1px solid black;
 }
@@ -59,14 +47,13 @@
   color: black;
   background-color: white;
   margin-top: 75px;
-  height: 355px;
+  height: 335px;
 }
 .title {
-  padding-top: 23px;
+  padding-top: 17px;
+  font-size: 24px;
 }
-.input-text p {
-  margin-left: 30px;
-}
+
 .filmstripe-top {
   position: absolute;
   width: 499px;
@@ -80,55 +67,37 @@
   bottom: 68px;
 }
 
-.input-text p {
-  margin-bottom: 0px;
+.start-bttn {
+  position: absolute;
+  top: 195px;
+  left: 17px;
+  font-size: 80px;
+  color: rgb(87, 87, 87);
+  text-shadow: 3px 2px 2px rgb(87, 87, 87);
 }
-textarea {
-  width: 420px;
-  height: 100px;
-  border: solid 1px #5c5c5c;
-  border-radius: 5px;
-  font-size: 16px;
-  resize: none;
-  margin-left: 33px;
+.end-bttn {
+  position: absolute;
+  top: 195px;
+  right: 17px;
+  font-size: 80px;
+  color: rgb(87, 87, 87);
+  text-shadow: 3px 2px 2px rgb(87, 87, 87);
 }
-input:nth-child(1) {
-  width: 420px;
-  height: 40px;
-  border: solid 1px #5c5c5c;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-left: 33px;
+.start-bttn:hover {
+  color: #ffd4d4;
 }
-input:nth-child(2) {
-  width: 80%;
-  height: 40px;
-  font-size: 16px;
-  margin-left: 33px;
+.end-bttn:hover {
+  color: #ffd4d4;
 }
-
-.bttn {
-  margin-top: 45px;
-  margin-left: 30px;
-}
-.tapeChange {
-  background: linear-gradient(#fff3f3, #ffc6c6, #fff3f3);
-}
-.musicSelection {
-  margin-right: 77px;
-  background: linear-gradient(#fff3f3, #ffc6c6, #fff3f3);
-}
-.bttn button {
-  width: 110px;
+.change-bttn {
+  width: 150px;
   height: 40px;
   border-radius: 3px;
-  margin-left: 6px;
-  margin-top: 10px;
   border: 1px solid #565966;
-}
-
-#send {
-  background: linear-gradient(#e4eeff, #a8c8ff, #e4eeff);
+  background: linear-gradient(#fff3f3, #ffc6c6, #fff3f3);
+  position: relative;
+  bottom: -67px;
+  left: 170px;
 }
 /* waterDrop */
 .ocean {
