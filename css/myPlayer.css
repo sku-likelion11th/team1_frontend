@@ -231,7 +231,7 @@ thead tr:nth-child(3) th {
 .share-container {
   position: fixed;
   bottom: 32px;
-  margin-left: 10px;
+  margin-left: 15px;
   z-index: 10;
 }
 .share-btn {
@@ -258,6 +258,7 @@ thead tr:nth-child(3) th {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #6c353573;
+  width: 330px;
   bottom: 50%;
   left: 50%;
   color: #fff;
@@ -318,6 +319,10 @@ thead tr:nth-child(3) th {
   width: 25%;
   text-transform: capitalize;
   font-size: 19px;
+}
+.copy-btn a {
+  text-decoration: none;
+  color: white;
 }
 
 .share-options.active .title,
