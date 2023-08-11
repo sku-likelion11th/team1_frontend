@@ -1,4 +1,8 @@
 const button = document.querySelector(".voice-button");
+const ttsText = document.getElementById("ttsText");
+const stopButton = document.getElementById("stopButton");
+const closeArea = document.querySelector(".close-area");
+
 const message = new SpeechSynthesisUtterance();
 
 button.addEventListener("click", () => {
@@ -7,9 +11,24 @@ button.addEventListener("click", () => {
   message.lang = "ko-KR";
   message.pitch = 1;
   message.rate = 1;
-  message.text = "안녕하세요";
+  message.text = ttsText.textContent;
   message.volume = 1;
   window.speechSynthesis.speak(message);
+
+  // 버튼 클릭시 tts 출력 멈춤
+  stopButton.addEventListener("click", () => {
+    window.speechSynthesis.cancel();
+  });
+  // ESC 키 눌렀을 때 tts 출력 멈춤
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+      window.speechSynthesis.cancel();
+    }
+  });
+  // 모달 창 닫았을 때 tts 출력 멈춤
+  closeArea.addEventListener("click", () => {
+    window.speechSynthesis.cancel();
+  });
 
   if (
     typeof SpeechSynthesisUtterance === "undefined" ||

@@ -16,17 +16,12 @@ function modalOff() {
   modalOverlay.style.display = "none";
 }
 
-closeBtn.addEventListener("click", (e) => {
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    modalOff();
+  }
+});
+
+closeArea.addEventListener("click", () => {
   modalOff();
-});
-modal.addEventListener("click", (e) => {
-  const evTarget = e.target;
-  if (evTarget.classList.contains("modal-overlay")) {
-    modalOff();
-  }
-});
-window.addEventListener("keyup", (e) => {
-  if (isModalOn() && e.key === "Escape") {
-    modalOff();
-  }
 });
