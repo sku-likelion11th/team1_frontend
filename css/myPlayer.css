@@ -73,7 +73,7 @@
   height: 182px;
   position: relative;
   top: 40px;
-  z-index: 100;
+  z-index: 8;
 }
 .shelf img {
   height: 62px;
@@ -142,6 +142,7 @@ hr {
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background: #6c353573;
+
   bottom: 50%;
   left: 50%;
   color: #fff;
