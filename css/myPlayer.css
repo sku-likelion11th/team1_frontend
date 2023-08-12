@@ -83,13 +83,21 @@
 .open-radio img {
   height: 230px;
   position: relative;
-  top: 530px;
+  top: 494px;
 }
 .sharing {
   font-size: 30px;
   margin-right: 30px;
 }
-hr {
+.page ul {
+  font-size: 25px;
+  z-index: 400;
+  position: relative;
+  top: 508px;
+  padding-right: 32px;
+}
+
+.article hr {
   border: none;
   border-top: 3px dotted #2392b4;
   color: #fff;
@@ -101,16 +109,6 @@ hr {
   margin-right: auto;
   position: relative;
   top: 530px;
-}
-.next-bttn img {
-  position: absolute;
-  left: 1079px;
-  height: 190px;
-}
-.back-bttn img {
-  position: relative;
-  right: 46px;
-  height: 190px;
 }
 
 /*---------calendar---------*/
@@ -481,4 +479,9 @@ audio {
 .sentance::-webkit-scrollbar-track {
   background: #cecece; /* 스크롤바 뒷 배경 색상 */
   border-radius: 320px;
+}
+
+/* 페이지네이션 */
+.article {
+  z-index: 3333;
 }

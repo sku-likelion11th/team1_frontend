@@ -36,18 +36,22 @@
               <div class="input-text">
                 <div class="title text-center">테이프를 선택하세요</div>
                 <div class="tape text-center">
-                  <img src="./source/img/tape.png" />
+                  <img id="tapeImage" src="./source/img/tape.png" />
                 </div>
-                <div class="start-bttn">
+                <div class="start-bttn" onclick="changeImageBack()">
                   <i class="bi bi-skip-start-fill"></i>
                 </div>
-                <div class="end-bttn">
+                <div class="end-bttn" onclick="changeImageFoward()">
                   <i class="bi bi-skip-end-fill"></i>
                 </div>
-                <button class="change-bttn" onclick="location.href='#.html'">
+                <button
+                  class="change-bttn"
+                  onclick="location.href='writing.html' "
+                >
                   변경완료
                 </button>
               </div>
+
               <img
                 src="./source/img/filmstripe.png"
                 class="filmstripe-bottom"
@@ -57,6 +61,7 @@
         </div>
       </div>
     </div>
+    <script src="./js/tapechange.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
