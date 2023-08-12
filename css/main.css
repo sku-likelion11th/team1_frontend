@@ -22,40 +22,23 @@
   left: 15px;
   right: 15px;
   bottom: 15px;
+  overflow: hidden;
 }
-
-.window img:nth-child(1) {
-  width: 364px;
-  position: absolute;
-  top: 190px;
-  left: 199px;
-}
-.window img:nth-child(2) {
-  width: 364px;
-  position: absolute;
-  top: 190px;
-  left: 199px;
-}
-
-.radio img {
-  width: 300px;
-  position: relative;
-  top: 44px;
-  left: 662px;
-  z-index: 1;
-}
-.shelf img {
-  width: 386px;
-  position: absolute;
-  top: 329px;
-  left: 619px;
-}
-.title {
-  background-color: white;
+.area {
+  overflow: hidden;
+  background: linear-gradient(#fffdfb, #e9e7d9, #fffdfb);
   width: 1235px;
-  height: 144px;
+  height: 684px;
   border-radius: 10px;
-  margin-bottom: 15px;
+}
+
+.title {
+  background-color: rgb(255, 255, 255, 0.6);
+  border-radius: 300px;
+  padding: 30px;
+  width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .main-title {
   position: relative;
@@ -67,7 +50,11 @@
   font-size: 24px;
   color: #a0c49d;
 }
-
+.radio img {
+  width: 300px;
+  position: relative;
+  z-index: 1;
+}
 .bttn {
   text-decoration: none;
   width: 309px;
@@ -76,9 +63,6 @@
   color: #c86b6b;
 }
 
-p {
-  color: white;
-}
 button {
   font-size: 20px;
   border: 5px solid rgb(61, 61, 61);
@@ -89,15 +73,61 @@ button {
   top: 232px;
   background-color: #ffffff;
 }
-.area2 {
-  background-color: white;
-  width: 1235px;
-  height: 521px;
-  border-radius: 10px;
-}
 
 .voice_json {
   position: absolute;
-  left: 652px;
-  bottom: 158px;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fish {
+  position: absolute;
+  top: 450px;
+  left: 200px;
+}
+/* waterDrop */
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
 }

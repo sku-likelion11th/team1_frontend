@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/buble.css" />
     <title>MYMY</title>
   </head>
   <body>
@@ -23,42 +24,124 @@
             <div class="sub-tile font-NeoDunggeunmo">
               ㅅr랑하는 ㅅr람에게 보내는 음성 메세지
             </div>
-          </div>
-          <div class="window">
-            <img src="../source/img/window.png" class="z-1" />
-            <img src="../source/img/bg_afternoon.png" />
-          </div>
-
-          <div class="area2">
             <div class="radio z-1">
               <img src="../source/img/radio.png" />
             </div>
-            <div class="shelf">
-              <img src="../source/img/shelf.png" class="shelf" />
-            </div>
+          </div>
 
-            <button
-              type="submit"
-              onclick="location.href='signin.html'"
-              class="bttn font-NeoDunggeunmo"
+          <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+          </div>
+
+          <button
+            type="submit"
+            onclick="location.href='signin.html'"
+            class="bttn font-NeoDunggeunmo"
+          >
+            내 플레이어로 가기
+          </button>
+
+          <div class="voice_json">
+            <!-- scss-->
+            <svg
+              class="bubbles"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 701 1024"
+              style="overflow: visible"
             >
-              내 플레이어로 가기
-            </button>
-            <button onclick="location.href='writing.html'">
-              편지쓰기 임시 링크
-            </button>
-            <div class="voice_json">
-              <lottie-player
-                src="../js/json/animation_beat.json"
-                background="transparent"
-                speed="1"
-                style="width: 300px"
-                loop
-                autoplay
-              ></lottie-player>
-            </div>
+              <g class="bubbles-large" stroke-width="7">
+                <g>
+                  <g transform="translate(10 940)">
+                    <circle cx="35" cy="35" r="35" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(373 940)">
+                    <circle cx="35" cy="35" r="35" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(408 940)">
+                    <circle cx="35" cy="35" r="35" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(621 940)">
+                    <circle cx="35" cy="35" r="35" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(179 940)">
+                    <circle cx="35" cy="35" r="35" />
+                  </g>
+                </g>
+              </g>
+              <g class="bubbles-small" stroke-width="4">
+                <g>
+                  <g transform="translate(147 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(255 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(573 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(429 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(91 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(640 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(321 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(376 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(376 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+                <g>
+                  <g transform="translate(497 984)">
+                    <circle cx="15" cy="15" r="15" />
+                  </g>
+                </g>
+              </g>
+            </svg>
           </div>
         </section>
+      </div>
+      <div class="fish">
+        <lottie-player
+          src="./js/json/animation_fish.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px"
+          loop
+          autoplay
+        ></lottie-player>
       </div>
     </div>
     <script

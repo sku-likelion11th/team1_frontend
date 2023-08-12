@@ -112,6 +112,7 @@ input:nth-child(2) {
   margin-left: 30px;
 }
 .tapeChange {
+  margin-right: 200px; /* 음악추가 할거면 삭제하면 됨 */
   background: linear-gradient(#fff3f3, #ffc6c6, #fff3f3);
 }
 .musicSelection {
