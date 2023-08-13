@@ -39,7 +39,7 @@
 .header {
   flex: 0.1;
 }
-hr {
+.modal_hr {
   border: none;
   border-top: 3px dotted #2392b4;
   color: #fff;
