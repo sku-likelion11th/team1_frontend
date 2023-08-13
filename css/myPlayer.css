@@ -39,7 +39,19 @@
 .header {
   flex: 0.1;
 }
-
+hr {
+  border: none;
+  border-top: 3px dotted #2392b4;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 90%;
+  margin-top: -10px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 530px;
+}
 .content-title {
   display: flex;
   align-items: center;
@@ -83,7 +95,7 @@
 .open-radio img {
   height: 230px;
   position: relative;
-  top: 494px;
+  top: 532px;
 }
 .sharing {
   font-size: 30px;
@@ -110,21 +122,30 @@
   position: relative;
   top: 530px;
 }
-.writing-bttn {
-}
+
 .writing-bttn > button {
-  position: relative;
-  left: 632px;
-  bottom: 7px;
-  height: 50px;
-  width: 140px;
-  font-size: 19px;
+  position: fixed;
+  z-index: 10;
+  top: 70px;
+  right: 420px;
+  height: 3rem;
+  width: 190px;
   background-color: rgb(240, 163, 161);
   box-shadow: rgb(172, 117, 117) 0px 0rem 0.4rem;
   color: white;
   border: 2px solid;
   border-radius: 30px;
   border-style: none;
+}
+.writing-text {
+  font-size: 21px;
+  margin-top: 6px;
+  margin-left: 10px;
+}
+.writing-text i {
+  font-size: 24px;
+  position: absolute;
+  right: 17px;
 }
 
 /*---------share button---------*/

@@ -90,3 +90,47 @@ input:not(:placeholder-shown) {
   border-bottom: solid 1px #8aa1a1;
   outline: none;
 }
+input[type="submit"] {
+  background-color: #8aa1a1;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  width: 40%;
+  height: 50px;
+  font-size: 14pt;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+#forgot {
+  text-align: center;
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px;
+  position: relative;
+  left: 190px;
+}
+#join {
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px;
+}
+.bttn {
+  color: white;
+  border-radius: 10px;
+  font-size: 23px;
+  width: 300px;
+  margin-top: 10px;
+  height: 150px;
+  font-size: 14pt;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bttn :nth-child(1) {
+  background-color: #e06864;
+  border: solid 2px black;
+  margin-top: 40px;
+}
+.bttn :nth-child(2) {
+  background-color: #2a8eb5;
+  border: solid 2px black;
+}

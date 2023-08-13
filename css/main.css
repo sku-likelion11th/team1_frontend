@@ -8,7 +8,7 @@
   border-radius: 9px;
   border: 1px solid #86737d;
   width: 1300px;
-  height: 750px;
+  height: 860px;
   margin: 25px auto;
   position: relative;
 }
@@ -28,19 +28,21 @@
   overflow: hidden;
   background: linear-gradient(#fffdfb, #e9e7d9, #fffdfb);
   width: 1235px;
-  height: 684px;
+  height: 794px;
   border-radius: 10px;
 }
 
 .title {
-  background-color: rgb(255, 255, 255, 0.6);
+  background-color: rgb(255, 255, 255);
   border-radius: 300px;
   padding: 30px;
   width: 900px;
+  height: 690px;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 50px;
   position: relative;
-  z-index: 100;
+  z-index: 1;
 }
 .main-title {
   font-size: 60px;
@@ -63,6 +65,7 @@
   position: relative;
   width: 270px;
   z-index: 3;
+  margin-bottom: 20px;
 }
 .volume {
   width: 468px;
@@ -141,9 +144,10 @@ input[type="submit"] {
   text-align: center;
   font-size: 12pt;
   color: rgb(164, 164, 164);
-  margin: 10px 0px;
+  margin: 10px 0px 18px;
   position: relative;
   left: 119px;
+  margin-bottom: 30px;
 }
 #join {
   font-size: 12pt;
@@ -154,18 +158,17 @@ input[type="submit"] {
   color: white;
   border-radius: 10px;
   font-size: 23px;
-  width: 300px;
-  margin-top: 10px;
-  height: 150px;
+  width: 270px;
+  height: 120px;
   font-size: 14pt;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  z-index: 300;
 }
 .bttn :nth-child(1) {
   background-color: #e06864;
   border: solid 2px black;
-  margin-top: 40px;
+  margin-top: 10px;
 }
 .bttn :nth-child(2) {
   background-color: #2a8eb5;

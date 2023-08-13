@@ -61,7 +61,7 @@ h1 {
   }
 
   g:nth-of-type(1) {
-    animation: up 6.5s infinite;
+    animation: up 11.5s infinite;
 
     g {
       transform: translateX(350px);
@@ -73,7 +73,7 @@ h1 {
   }
 
   g:nth-of-type(2) {
-    animation: up 5.25s 250ms infinite;
+    animation: up 11.25s 250ms infinite;
 
     g {
       transform: translateX(450px);
@@ -85,7 +85,7 @@ h1 {
   }
 
   g:nth-of-type(3) {
-    animation: up 6s 750ms infinite;
+    animation: up 11s 750ms infinite;
 
     g {
       transform: translateX(700px);
@@ -97,26 +97,26 @@ h1 {
   }
 
   g:nth-of-type(4) {
-    animation: up 5.5s 1.5s infinite;
+    animation: up 11.5s 1.5s infinite;
 
     g {
       transform: translateX(500px);
     }
 
     circle {
-      animation: wobble 3s infinite ease-in-out;
+      animation: wobble 11s infinite ease-in-out;
     }
   }
 
   g:nth-of-type(5) {
-    animation: up 6.5s 4s infinite;
+    animation: up 11.5s 4s infinite;
 
     g {
       transform: translateX(675px);
     }
 
     circle {
-      animation: wobble 3s infinite ease-in-out;
+      animation: wobble 11s infinite ease-in-out;
     }
   }
 }
