@@ -1,4 +1,6 @@
 const tapeImages = document.querySelectorAll(".modal-on");
+const tapeChange = document.querySelector(".tapeChange");
+
 const modalOverlay = document.getElementById("modal-overlay");
 const closeBtn = modal.querySelector(".close-area");
 
@@ -8,10 +10,15 @@ tapeImages.forEach((image) => {
   });
 });
 
+tapeChange.addEventListener("click", () => {
+  modalOn();
+});
+
 function modalOn() {
   modal.style.display = "flex";
   modalOverlay.style.display = "block";
 }
+
 function modalOff() {
   modalOverlay.style.display = "none";
 }

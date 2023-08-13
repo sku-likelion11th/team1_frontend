@@ -169,10 +169,12 @@ input[type="submit"] {
   background-color: #e06864;
   border: solid 2px black;
   margin-top: 10px;
+  box-shadow: 3px 2px 2px rgb(156, 156, 156);
 }
 .bttn :nth-child(2) {
   background-color: #2a8eb5;
   border: solid 2px black;
+  box-shadow: 3px 2px 2px rgb(156, 156, 156);
 }
 
 /* waterDrop */
