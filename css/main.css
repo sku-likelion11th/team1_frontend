@@ -39,52 +39,139 @@
   width: 900px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
+  z-index: 100;
 }
 .main-title {
-  position: relative;
   font-size: 60px;
   color: #a0c49d;
   text-shadow: 3px 2px 2px gray;
+  position: relative;
+  bottom: 32px;
 }
 .sub-tile {
   font-size: 24px;
   color: #a0c49d;
+  position: absolute;
+  left: 214px;
+  top: 112px;
+}
+.radio {
+  z-index: 3;
 }
 .radio img {
-  width: 300px;
   position: relative;
-  z-index: 1;
+  width: 270px;
+  z-index: 3;
+}
+.volume {
+  width: 468px;
+  position: absolute;
+  left: 226px;
+  top: 208px;
+  margin-bottom: -33px;
+}
+
+.main-title {
+  padding-top: 40px;
+  font-size: 60px;
+  color: #a0c49d;
+  text-shadow: 3px 2px 2px gray;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+form {
+  padding: 10px;
+}
+
+.input-box {
+  position: relative;
+  margin: 10px 0;
+}
+.input-box > input {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  padding: 20px 0px 5px 0px;
+  font-size: 14pt;
+  width: 40%;
+}
+input::placeholder {
+  color: transparent;
+}
+input:placeholder-shown + label {
+  color: #aaa;
+  font-size: 14pt;
+  top: 15px;
+}
+input:focus + label,
+label {
+  color: #8aa1a1;
+  font-size: 10pt;
+  pointer-events: none;
+  position: absolute;
+  left: 255px;
+  top: 0px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  border-bottom: solid 1px #8aa1a1;
+  outline: none;
+}
+input[type="submit"] {
+  background-color: #8aa1a1;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  width: 40%;
+  height: 50px;
+  font-size: 14pt;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+#forgot {
+  text-align: center;
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px;
+  position: relative;
+  left: 119px;
+}
+#join {
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px;
 }
 .bttn {
-  text-decoration: none;
-  width: 309px;
-  border: 4px solid #c86b6b;
-  font-size: 26px;
-  color: #c86b6b;
-}
-
-button {
-  font-size: 20px;
-  border: 5px solid rgb(61, 61, 61);
-  border-radius: 30px;
-  height: 70px;
-  position: relative;
-  left: 645px;
-  top: 232px;
-  background-color: #ffffff;
-}
-
-.voice_json {
-  position: absolute;
-  width: 500px;
+  color: white;
+  border-radius: 10px;
+  font-size: 23px;
+  width: 300px;
+  margin-top: 10px;
+  height: 150px;
+  font-size: 14pt;
   margin-left: auto;
   margin-right: auto;
+  z-index: 300;
 }
-.fish {
-  position: absolute;
-  top: 450px;
-  left: 200px;
+.bttn :nth-child(1) {
+  background-color: #e06864;
+  border: solid 2px black;
+  margin-top: 40px;
 }
+.bttn :nth-child(2) {
+  background-color: #2a8eb5;
+  border: solid 2px black;
+}
+
 /* waterDrop */
 .ocean {
   height: 5%;
