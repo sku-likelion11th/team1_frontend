@@ -1,0 +1,15 @@
+const data = [
+  { title: "패턴", postNumber: 1 },
+  { title: "마음가짐", postNumber: 2 },
+  { title: "HTML 기초", postNumber: 3 },
+  { title: "css 기초", postNumber: 4 },
+  { title: "CSSflex", postNumber: 5 },
+  { title: "Mac 계산기 클론하기", postNumber: 6 },
+  { title: "CSS grid", postNumber: 7 },
+  { title: "slice? splice", postNumber: 8 },
+  { title: "함수를 정의하는 방법", postNumber: 9 },
+  { title: "순열(Permutation) 구현하기", postNumber: 10 },
+  { title: "문자열에서 특정 위치의 문자를 변경하고 싶은 경우", postNumber: 11 },
+  { title: "letIt const", postNumber: 12 },
+  { title: "nvm", postNumber: 13 },
+];
