@@ -15,6 +15,7 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/writing.css" />
+    <link rel="stylesheet" href="./css/button.css" />
     <title>MYMY</title>
     <link
       rel="apple-touch-icon"
@@ -115,17 +116,75 @@
             <img src="./source/img/filmstripe.png" class="filmstripe-top" />
             <div class="music-text">
               <div class="music-title text-center">음악을 선택하세요</div>
-              <ul>
-                <li>으아아아아아아</li>
-                <li>으아아아아ㅏ</li>
-              </ul>
-              <button class="closeBttn">변경완료</button>
+
+              <div class="audio-box">
+                <div class="audio1 d-flex flex-row">
+                  <li>뉴진스 - ETA</li>
+                  <audio class="audioElement">
+                    <source src="./source/audio/audio1.mp3" type="audio/mpeg" />
+                  </audio>
+                  <div class="musicBtn d-flex flex-row">
+                    <button class="playBtn btn green mini">Play</button>
+                    <button class="stopBtn btn purple mini">Stop</button>
+                  </div>
+                </div>
+
+                <div class="audio2 d-flex flex-row">
+                  <li>르세라핌 - ANTIFRAGILE</li>
+                  <audio class="audioElement">
+                    <source src="./source/audio/audio2.mp3" type="audio/mpeg" />
+                  </audio>
+                  <div class="musicBtn d-flex flex-row">
+                    <button class="playBtn btn green mini">Play</button>
+                    <button class="stopBtn btn purple mini">Stop</button>
+                  </div>
+                </div>
+
+                <div class="audio3 d-flex flex-row">
+                  <li>나용성 - 아이랑</li>
+                  <audio class="audioElement">
+                    <source src="./source/audio/audio3.mp3" type="audio/mpeg" />
+                  </audio>
+                  <div class="musicBtn d-flex flex-row">
+                    <button class="playBtn btn green mini">Play</button>
+                    <button class="stopBtn btn purple mini">Stop</button>
+                  </div>
+                </div>
+
+                <div class="audio4 d-flex flex-row">
+                  <li>에스파 - Next Level</li>
+                  <audio class="audioElement">
+                    <source src="./source/audio/audio4.mp3" type="audio/mpeg" />
+                  </audio>
+                  <div class="musicBtn d-flex flex-row">
+                    <button class="playBtn btn green mini">Play</button>
+                    <button class="stopBtn btn purple mini">Stop</button>
+                  </div>
+                </div>
+
+                <div class="audio5 d-flex flex-row">
+                  <li>(여자)아이들 - MY BAG</li>
+                  <audio class="audioElement">
+                    <source src="./source/audio/audio5.mp3" type="audio/mpeg" />
+                  </audio>
+                  <div class="musicBtn d-flex flex-row">
+                    <button class="playBtn btn green mini">Play</button>
+                    <button class="stopBtn btn purple mini">Stop</button>
+                  </div>
+                </div>
+              </div>
+              <button class="closeBttn" id="changeBttn">변경완료</button>
+              <img
+                src="./source/img/filmstripe.png"
+                class="filmstripe-bottom"
+              />
             </div>
           </div>
         </div>
       </div>
     </div>
 
+    <script src="./js/music.js"></script>
     <script src="./js/writingModal.js"></script>
     <script src="./js/tapechange.js"></script>
     <script

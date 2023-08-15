@@ -18,6 +18,10 @@ function modalTapeOn() {
   musicOverlay.style.display = "block";
   tapeBox.style.display = "none";
   noneModalTapeImages.style.display = "none";
+
+  /* modalMusic 안보이게 */
+  modalMusic.style.display = "none";
+  musicOverlay.style.display = "none";
 }
 function modalMusicOn() {
   modalMusic.style.display = "flex";
@@ -25,6 +29,10 @@ function modalMusicOn() {
   musicOverlay.style.display = "block";
   tapeBox.style.display = "none";
   noneModalTapeImages.style.display = "none";
+
+  /* modalTape 안보이게 */
+  modalTape.style.display = "none";
+  tapeOverlay.style.display = "none";
 }
 
 function modalTapeOff() {
