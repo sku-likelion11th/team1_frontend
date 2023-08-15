@@ -79,16 +79,15 @@
 }
 .shelf {
   position: absolute;
-  top: 100px;
-  display: flex;
-  justify-content: space-between;
+  top: 190px;
 }
 .shelf img {
-  position: absolute;
-  height: 62px;
+  height: 50px;
   width: auto;
-  margin: 5px;
+  margin-bottom: 200px;
+  margin-left: auto;
 }
+
 .tape img {
   height: 182px;
   position: relative;

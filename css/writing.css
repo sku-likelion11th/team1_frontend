@@ -80,7 +80,7 @@
 }
 textarea {
   width: 420px;
-  height: 100px;
+  height: 180px;
   border: solid 1px #5c5c5c;
   border-radius: 5px;
   font-size: 16px;
@@ -106,13 +106,12 @@ input:nth-child(2) {
   margin-top: 45px;
   margin-left: 30px;
 }
-.tapeChange {
-  margin-right: 200px; /* 음악추가 할거면 삭제하면 됨 */
+.tapeChange,
+.musicChange {
   background: linear-gradient(#fff3f3, #ffc6c6, #fff3f3);
 }
-.musicSelection {
+.musicChange {
   margin-right: 77px;
-  background: linear-gradient(#fff3f3, #ffc6c6, #fff3f3);
 }
 .bttn button {
   width: 110px;
@@ -126,7 +125,7 @@ input:nth-child(2) {
 #send {
   background: linear-gradient(#e4eeff, #a8c8ff, #e4eeff);
 }
-/* modal */
+/* tapeChange modal */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -138,7 +137,7 @@ input:nth-child(2) {
   display: none; /* 기본적으로 보이지 않게 설정 */
 }
 
-#modal .input-box {
+#modal-tape .input-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -152,31 +151,31 @@ input:nth-child(2) {
   box-shadow: 5px 5px 5px 5px gray inset;
   border: 1px solid black;
 }
-#modal .input-text {
+#modal-tape .input-text {
   color: black;
   background-color: white;
   margin-top: 75px;
   height: 335px;
 }
-#modal .title {
+#modal-tape .title {
   padding-top: 17px;
   font-size: 24px;
 }
 
-#modal .filmstripe-top {
+#modal-tape .filmstripe-top {
   position: absolute;
   width: 499px;
   height: 20px;
   top: 55px;
 }
-#modal .filmstripe-bottom {
+#modal-tape .filmstripe-bottom {
   position: absolute;
   width: 499px;
   height: 20px;
   bottom: 68px;
 }
 
-#modal .start-bttn {
+#modal-tape .start-bttn {
   position: absolute;
   top: 195px;
   left: 17px;
@@ -184,7 +183,7 @@ input:nth-child(2) {
   color: rgb(87, 87, 87);
   text-shadow: 3px 2px 2px rgb(87, 87, 87);
 }
-#modal .end-bttn {
+#modal-tape .end-bttn {
   position: absolute;
   top: 195px;
   right: 17px;
@@ -192,13 +191,13 @@ input:nth-child(2) {
   color: rgb(87, 87, 87);
   text-shadow: 3px 2px 2px rgb(87, 87, 87);
 }
-#modal .start-bttn:hover {
+#modal-tape .start-bttn:hover {
   color: #ffd4d4;
 }
-#modal .end-bttn:hover {
+#modal-tape .end-bttn:hover {
   color: #ffd4d4;
 }
-#modal .change-bttn {
+#modal-tape .closeBttn {
   width: 150px;
   height: 40px;
   border-radius: 3px;
@@ -208,6 +207,8 @@ input:nth-child(2) {
   bottom: 15px;
   left: 170px;
 }
+/* musicSelection modal */
+
 /* waterDrop */
 .ocean {
   height: 5%;
