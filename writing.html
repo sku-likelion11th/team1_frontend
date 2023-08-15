@@ -79,7 +79,7 @@
       </div>
     </div>
     <!-- tapeChange modal -->
-    <div class="modal-overlay" id="tape-modal-overlay">
+    <div id="tape-overlay">
       <div class="input-box font-NeoDunggeunmo" id="modal-tape">
         <div
           class="d-flex justify-content-center flex-column align-items-center font-NeoDunggeunmo"
@@ -106,15 +106,27 @@
       </div>
     </div>
     <!-- Music modal -->
-    <div class="modal-overlay" id="modal-overlay">
-      <div class="input-box font-NeoDunggeunmo" id="modal-music">
+    <div id="music-overlay">
+      <div class="music-box font-NeoDunggeunmo" id="modal-music">
         <div
           class="d-flex justify-content-center flex-column align-items-center font-NeoDunggeunmo"
-        ></div>
+        >
+          <div class="music-box">
+            <img src="./source/img/filmstripe.png" class="filmstripe-top" />
+            <div class="music-text">
+              <div class="music-title text-center">음악을 선택하세요</div>
+              <ul>
+                <li>으아아아아아아</li>
+                <li>으아아아아ㅏ</li>
+              </ul>
+              <button class="closeBttn">변경완료</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <script src="./js/tapeChangeModal.js"></script>
+    <script src="./js/writingModal.js"></script>
     <script src="./js/tapechange.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
