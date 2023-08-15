@@ -49,6 +49,7 @@
   box-shadow: 5px 5px 5px 5px gray inset;
   border: 1px solid black;
 }
+
 .input-text {
   color: black;
   background-color: white;
@@ -203,8 +204,8 @@ input:nth-child(2) {
   border-radius: 3px;
   border: 1px solid #565966;
   background: linear-gradient(#fff3f3, #ffc6c6, #fff3f3);
-  position: relative;
-  bottom: -67px;
+  position: absolute;
+  bottom: 15px;
   left: 170px;
 }
 /* waterDrop */
