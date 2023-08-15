@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/test.css" />
+    <link rel="stylesheet" href="../css/help.css" />
+    <title>MYMY</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./source/favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./source/favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./source/favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./source/favicon_io/site.webmanifest" />
+  </head>
+  <body>
+    <!-- page -->
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <div class="content-container">
+            <div class="header content-title">
+              <div class="content-title-name font-NeoDunggeunmo">
+                (User name)이의 플레이어
+              </div>
+              <!-- help -->
+              <div class="help">
+                <input type="checkbox" id="navi-toggle" class="checkbox" />
+                <label for="navi-toggle" class="button">
+                  <span>
+                    <img
+                      class="icon"
+                      src="../source/img/question-icon.png"
+                    />&nbsp;</span
+                  >
+                </label>
+                <div class="background">&nbsp;</div>
+                <nav class="nav display-container">
+                  <img class="helpTv" src="../source/img/TV.png" alt="TV" />
+                </nav>
+              </div>
+            </div>
+            <!--share button-->
+            <div class="share-container">
+              <button class="share-btn">
+                <i class="bi bi-share-fill"></i>
+              </button>
+              <div class="share-options">
+                <p class="title font-bitbit">공유</p>
+                <div class="link-container">
+                  <p class="link font-bitbit">
+                    http://127.0.0.1:3000/test_help.html
+                  </p>
+                  <button class="copy-btn font-bitbit" id="toastStart">
+                    <a href="#" onclick="clip(); return false;">복사</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- page -->
+            <section class="container">
+              <div class="tape-shelf-box text-center">
+                <div class="shelf row">
+                  <div class="col-4">
+                    <img src="../source/img/shelf.png" />
+                    <img src="../source/img/shelf.png" />
+                  </div>
+                  <div class="col-4">
+                    <img src="../source/img/shelf.png" />
+                    <img src="../source/img/shelf.png" />
+                  </div>
+                  <div class="col-4">
+                    <img src="../source/img/shelf.png" />
+                    <img src="../source/img/shelf.png" />
+                  </div>
+                </div>
+                <hr class="modal_hr col-6" />
+                <div class="open-radio z-3 text-center">
+                  <img src="../source/img/open-radio.png" />
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- modal -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="input-box font-NeoDunggeunmo" id="modal">
+        <div class="modal-window">
+          <div class="top-color">
+            <div class="close-area">X</div>
+          </div>
+          <div class="d-flex flex-column align-items-center">
+            <div class="radio">
+              <div class="musicNote">
+                <lottie-player
+                  src="./js/json/animation_volume.json"
+                  background="transparent"
+                  speed="1"
+                  loop
+                  autoplay
+                ></lottie-player>
+              </div>
+              <img src="./source/img/radio.png" />
+            </div>
+            <div class="info d-flex flex-column align-items-center">
+              <div class="info-title">제목: 해커톤 MYMY 파이팅!!</div>
+              <div class="sender">보낸사람 : 박시은</div>
+
+              <hr class="hr-modal" />
+
+              <div class="sentance mt-3">
+                <p id="ttsText">
+                  김용택 / 달이 떴다고 전화를 주시다니요 <br />달이 떴다고
+                  전화를 주시다니요. 이 밤 너무나 신나고 근사해요. 내 마음에도
+                  생전 처음 보는 환한 달이 떠오르고 산 아래 작은 마을이
+                  그려집니다. 간절한 이 그리움들을 사무쳐오는 이 연정들을 달빛에
+                  실어 당신께 보냅니다. 세상에 강변에 달빛이 곱다고 전화를 다
+                  주시다니요. 흐르는 물 어디쯤 눈부시게 부서지는 소리 문득
+                  들려옵니다.달이 떴다고 전화를 주시다니요. 이 밤 너무나 신나고
+                  근사해요. 내 마음에도 생전 처음 보는 환한 달이 떠오르고 산
+                  아래 작은 마을이 그려집니다. 간절한 이 그리움들을 사무쳐오는
+                  이 연정들을 달빛에 실어 당신께 보냅니다. 세상에 강변에 달빛이
+                  곱다고 전화를 다 주시다니요. 흐르는 물 어디쯤 눈부시게
+                  부서지는 소리 문득 들려옵니다.
+                </p>
+              </div>
+              <div class="btn d-flex justify-content-center">
+                <button class="message voice-button">메세지 출력 버튼</button>
+                <button id="stopButton">멈추기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/page.js"></script>
+    <script src="./js/tts.js"></script>
+    <script src="./js/animation_sharebutton.js"></script>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

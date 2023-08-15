@@ -1,0 +1,389 @@
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1300px;
+  position: relative;
+}
+.bookcover {
+  background-color: #b4d1da;
+  border-radius: 9px;
+  border: 1px solid #86737d;
+  width: 1300px;
+  height: 950px;
+  margin: 25px auto;
+  position: relative;
+}
+
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.page {
+  background-color: #eeeeee;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  padding: 15px;
+}
+
+.content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal_hr {
+  border: none;
+  border-top: 3px dotted #2392b4;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 1120px;
+  margin-left: 35px;
+  position: relative;
+  top: 530px;
+}
+.content-title {
+  display: flex;
+  align-items: center;
+}
+
+.content-title-name {
+  font-size: 30px;
+  padding-bottom: 20px;
+  margin-right: 30px;
+}
+
+.content-title-url {
+  flex: 1;
+  font-size: 0.5rem;
+  text-align: end;
+}
+.tape-shelf-box {
+  position: relative;
+  width: 1190px;
+  height: 800px;
+  background-color: white;
+  border-radius: 9px;
+  border: 1px solid #adadad;
+}
+.shelf {
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.shelf img {
+  position: absolute;
+  height: 62px;
+  width: auto;
+  margin: 5px;
+}
+.tape img {
+  height: 182px;
+  position: relative;
+  top: 40px;
+  z-index: 8;
+}
+
+.open-radio img {
+  height: 230px;
+  position: relative;
+  top: 532px;
+}
+.sharing {
+  font-size: 30px;
+  margin-right: 30px;
+}
+.page ul {
+  font-size: 25px;
+  z-index: 400;
+  position: relative;
+  top: 508px;
+  padding-right: 32px;
+}
+
+.article hr {
+  border: none;
+  border-top: 3px dotted #2392b4;
+  color: #fff;
+  background-color: #fff;
+  height: 1px;
+  width: 90%;
+  margin-top: -30px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 530px;
+}
+
+/*---------share button---------*/
+.share-container {
+  position: fixed;
+  bottom: 32px;
+  margin-left: 15px;
+  z-index: 10;
+}
+.share-btn {
+  position: relative;
+  border: none;
+  background: #fff;
+  color: #f0a3a1;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  font-size: 25px;
+  padding-right: 3px;
+  cursor: pointer;
+  z-index: 2;
+  box-shadow: 0 0rem 0.4rem rgb(172, 117, 117);
+}
+
+.share-options {
+  position: absolute;
+  width: auto;
+  height: auto;
+  transform-origin: bottom left;
+  transform: scale(0);
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: #6c353573;
+  width: 330px;
+  bottom: 50%;
+  left: 50%;
+  color: #fff;
+  padding: 20px;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.share-options.active {
+  transform: scale(1);
+  transition-delay: 0s;
+}
+
+.title {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  font-size: 26px;
+  text-transform: capitalize;
+  border-bottom: 1px solid #fff;
+  width: fit-content;
+  padding: 0 20px 3px 0;
+}
+
+.link-container {
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0s;
+  width: 100%;
+  position: relative;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 40px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 0 10px;
+}
+.bi-share-fill {
+  font-size: 30px;
+  margin-right: 6px;
+}
+.link {
+  width: 80%;
+  height: 100%;
+  line-height: 55px;
+  color: #f0a3a1;
+}
+
+.copy-btn {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  background: #f0a3a1;
+  color: #fff;
+  border: none;
+  height: 100%;
+  width: 25%;
+  text-transform: capitalize;
+  font-size: 19px;
+}
+.copy-btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.share-options.active .title,
+.share-options.active .social-media,
+.share-options.active .link-container {
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+/* modal */
+.input-box {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  height: 630px;
+  width: 700px;
+  color: rgb(61, 30, 30);
+  bottom: 0;
+  border: 1px solid black;
+  background-color: #eaebf0;
+  display: none;
+}
+
+.hr-modal {
+  border: 3px dotted #8aa1a1;
+  width: 500px;
+  position: absolute;
+  top: 96px;
+}
+#modal .close-area {
+  font-size: 30px;
+  display: inline;
+  margin-left: 670px;
+  color: white;
+}
+.top-color {
+  background-color: #8aa1a1;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-right: 13px;
+  position: relative;
+}
+.radio {
+  z-index: 3;
+}
+.radio img {
+  height: 160px;
+  position: relative;
+  top: 5px;
+}
+.info {
+  border: 1px solid rgb(184, 184, 184);
+  border-radius: 40px;
+  height: 380px;
+  width: 550px;
+  background-color: white;
+  box-shadow: 5px 5px 5px rgb(206, 206, 206);
+  position: relative;
+  bottom: 30px;
+}
+.info-title {
+  font-size: 24px;
+  margin-top: 40px;
+}
+.sender {
+  color: #818181;
+  font-size: 20px;
+}
+audio {
+  width: 330px;
+  height: 60px;
+  position: relative;
+  bottom: 18px;
+  margin-bottom: 13px;
+  z-index: 1;
+}
+
+.musicNote {
+  position: absolute;
+  height: 200px;
+  right: 20px;
+  top: 32px;
+  margin-left: 23px;
+  z-index: -1;
+  color: #ec7580;
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: none; /* 기본적으로 보이지 않게 설정 */
+}
+.btn {
+  position: absolute;
+  bottom: -68px;
+}
+.message {
+  background-color: #f0a3a1;
+  color: white;
+  padding: 6px;
+  position: relative;
+  bottom: 6px;
+  z-index: 10;
+  margin-right: 10px;
+  border-radius: 8px;
+  border: 1px solid rgb(137, 137, 137);
+  box-shadow: 3px 2px 2px rgb(206, 206, 206);
+}
+
+#stopButton {
+  background-color: #f0a3a1;
+  color: white;
+  padding: 6px;
+  position: relative;
+  bottom: 6px;
+  z-index: 10;
+  border-radius: 8px;
+  border: 1px solid rgb(137, 137, 137);
+  box-shadow: 3px 2px 2px rgb(206, 206, 206);
+}
+.message:hover {
+  background-color: #8aa1a1;
+}
+#stopButton:hover {
+  background-color: #8aa1a1;
+}
+.sentance {
+  height: 240px;
+  width: 500px;
+  margin-bottom: 10px;
+  overflow: auto;
+  z-index: 3;
+}
+.sentance p {
+  padding: 13px;
+}
+/* 스크롤바 */
+.sentance::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+.sentance::-webkit-scrollbar-thumb {
+  background: #f0a3a1; /* 스크롤바 막대 색상 */
+  border: 1px solid #cecece; /* 스크롤바 막대 테두리 설정  */
+  border-radius: 320px;
+  background-clip: padding-box;
+}
+.sentance::-webkit-scrollbar-track {
+  background: #cecece; /* 스크롤바 뒷 배경 색상 */
+  border-radius: 320px;
+}
+
+/* 페이지네이션 */
+.article {
+  z-index: 3333;
+}
