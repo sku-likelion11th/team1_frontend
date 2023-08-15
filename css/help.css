@@ -28,8 +28,7 @@
 }
 
 .button {
-  position: fixed;
-  top: 70px;
+  position: relative;
   background-color: #f0a3a1;
   height: 3rem;
   width: 3rem;
@@ -44,8 +43,8 @@
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  position: fixed;
-  top: 70px;
+  position: relative;
+  top: -30px;
   background-image: radial-gradient(rgb(244, 227, 227), rgb(244, 227, 227));
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);

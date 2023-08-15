@@ -36,10 +36,6 @@
   flex-direction: column;
 }
 
-.header {
-  flex: 0.1;
-}
-
 .content-title {
   display: flex;
   align-items: center;
@@ -113,11 +109,14 @@ button {
 
 .bttn {
   position: relative;
-  top: 273px;
+  top: 266px;
 }
 .bttn :nth-child(1) {
   background-color: #e06864;
 }
 .bttn :nth-child(2) {
   background-color: #2a8eb5;
+}
+.help {
+  margin-left: 28px;
 }

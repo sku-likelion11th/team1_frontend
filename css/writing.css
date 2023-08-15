@@ -224,7 +224,6 @@ input:nth-child(2) {
 
 #modal-music .music-box {
   position: absolute;
-
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -236,6 +235,7 @@ input:nth-child(2) {
   box-shadow: 5px 5px 5px 5px gray inset;
   border: 1px solid black;
 }
+
 #modal-music .music-text {
   color: black;
   background-color: white;
