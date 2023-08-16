@@ -44,14 +44,21 @@ body {
   display: flex;
   padding: 15px;
 }
-.test {
-  background-color: black;
-  width: 268px;
-  height: 230px;
-  border-radius: 30px;
-  background-color: rgba(204, 204, 204, 0.5);
-  margin-left: 300px;
+.radio-bg {
   position: absolute;
+  left: 151px;
+  top: 148px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 20px;
+}
+.radio-bg img {
+  opacity: 0.5;
+  width: 289px;
+  height: 200px;
+}
+.top-radio {
+  margin-bottom: 94px;
 }
 .content-title {
   display: flex;
@@ -84,6 +91,7 @@ body {
   height: 200px;
   margin-top: -10px;
   transition: 0.5s;
+  z-index: 100;
 }
 .item .content {
   padding: 0px 20px 0px 20px;
