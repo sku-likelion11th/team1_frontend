@@ -1,12 +1,44 @@
 body {
-  background-image: linear-gradient(to top right, #cc64a2, #5c3075);
+  background-color: rgb(197, 170, 170);
   min-height: 100vh;
   line-height: 20px;
 }
 .container {
-  width: 900px;
+  width: 960px;
   margin: 150px auto 0;
 }
+.bookcover {
+  background-color: #b4d1da;
+  border-radius: 9px;
+  border: 1px solid #86737d;
+  width: 1300px;
+  height: 950px;
+  margin: 25px auto;
+  position: relative;
+}
+
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.page {
+  background-color: #eeeeee;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  padding: 15px;
+}
+
 .list {
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -34,11 +66,6 @@ body {
 .item .content .des {
   opacity: 0.7;
   margin: 10px 0;
-}
-.item .content .price {
-  font-size: large;
-  letter-spacing: 3px;
-  margin-bottom: 10px;
 }
 
 .item .content .add {
