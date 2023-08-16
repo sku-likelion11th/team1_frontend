@@ -16,8 +16,9 @@
     />
 
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/myPlayer.css" />
+    <link rel="stylesheet" href="./css/myPlayer.css" />
     <link rel="stylesheet" href="../css/help.css" />
+
     <title>MYMY</title>
     <link
       rel="apple-touch-icon"
@@ -40,30 +41,34 @@
   </head>
   <body>
     <!-- page -->
+    <div class="radio_bttn">
+      <img src="./source/img/radio_bttn.png" />
+      <img src="./source/img/radio_bttn.png" />
+      <img src="./source/img/radio_bttn.png" />
+    </div>
+
     <div class="bookcover">
       <div class="bookdot">
         <div class="page">
-          <div class="content-container">
-            <div class="header content-title">
-              <div class="content-title-name font-NeoDunggeunmo">
-                (User name)이의 플레이어
-              </div>
-              <!-- help -->
-              <div class="help">
-                <input type="checkbox" id="navi-toggle" class="checkbox" />
-                <label for="navi-toggle" class="button">
-                  <span>
-                    <img
-                      class="icon"
-                      src="../source/img/question-icon.png"
-                    />&nbsp;</span
-                  >
-                </label>
-                <div class="background">&nbsp;</div>
-                <nav class="nav display-container">
-                  <img class="helpTv" src="../source/img/TV.png" alt="TV" />
-                </nav>
-              </div>
+          <div class="container">
+            <!-- help -->
+            <div class="help d-flex justify-content-end">
+              <input type="checkbox" id="navi-toggle" class="checkbox" />
+              <label for="navi-toggle" class="button">
+                <span>
+                  <img
+                    class="icon"
+                    src="../source/img/question-icon.png"
+                  />&nbsp;</span
+                >
+              </label>
+              <div class="background">&nbsp;</div>
+              <nav class="nav display-container">
+                <img class="helpTv" src="../source/img/TV.png" alt="TV" />
+              </nav>
+            </div>
+            <div class="content-title-name font-NeoDunggeunmo">
+              (User name)이의 플레이어
             </div>
             <!--share button-->
             <div class="share-container">
@@ -82,63 +87,82 @@
                 </div>
               </div>
             </div>
-            <!-- page -->
-            <section
-              class="tape-shelf-box justify-content-center d-flex text-center"
-            >
-              <div class="tape-shelf">
-                <div class="tape">
-                  <img src="../source/img/tape.png" class="modal-on" />
-                </div>
-                <div class="shelf">
-                  <img src="../source/img/shelf.png" />
-                </div>
-                <div class="tape">
-                  <img src="../source/img/tape.png" class="modal-on" />
-                </div>
-                <div class="shelf">
-                  <img src="../source/img/shelf.png" />
-                </div>
-              </div>
-              <div class="tape-shelf">
-                <div class="tape">
-                  <img src="../source/img/tape.png" class="modal-on" />
-                </div>
-                <div class="shelf">
-                  <img src="../source/img/shelf.png" />
-                </div>
-                <div class="tape">
-                  <img src="../source/img/tape.png" class="modal-on" />
-                </div>
-                <div class="shelf">
-                  <img src="../source/img/shelf.png" />
-                </div>
-              </div>
-              <div class="tape-shelf">
-                <div class="tape">
-                  <img src="../source/img/tape.png" class="modal-on" />
-                </div>
-                <div class="shelf">
-                  <img src="../source/img/shelf.png" />
-                </div>
-                <div class="tape">
-                  <img src="../source/img/tape.png" class="modal-on" />
-                </div>
-                <div class="shelf">
-                  <img src="../source/img/shelf.png" />
-                </div>
-              </div>
-            </section>
 
-            <hr class="modal_hr" />
-            <div class="open-radio z-3 d-flex justify-content-center">
-              <img src="../source/img/open-radio.png" />
+            <div class="list">
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <div class="tape">
+                    <img src="source/img/tape.png " class="modal-on" />
+                  </div>
+                </div>
+                <div class="content"></div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape2.png " class="modal-on" />
+                </div>
+                <div class="content"></div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape3.png " class="modal-on" />
+                </div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape4.png " class="modal-on" />
+                </div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape2.png " class="modal-on" />
+                </div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape.png " class="modal-on" />
+                </div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape4.png " class="modal-on" />
+                </div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape3.png " class="modal-on" />
+                </div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape.png " class="modal-on" />
+                </div>
+              </div>
+              <!--item-->
+              <div class="item">
+                <div class="img">
+                  <img src="source/img/tape2.png " class="modal-on" />
+                </div>
+              </div>
             </div>
+            <ul class="listPage">
+              <li class="active">1</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
-
     <!-- modal -->
     <div class="modal-overlay" id="modal-overlay">
       <div class="input-box font-NeoDunggeunmo" id="modal">
@@ -190,19 +214,16 @@
         </div>
       </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.js"></script>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/pageNation.js"></script>
     <script src="./js/page.js"></script>
     <script src="./js/tts.js"></script>
     <script src="./js/animation_sharebutton.js"></script>

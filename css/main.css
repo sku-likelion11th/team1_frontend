@@ -7,7 +7,6 @@
   background-color: #b4d1da;
   border-radius: 9px;
   border: 1px solid #86737d;
-  width: 1300px;
   height: 860px;
   margin: 25px auto;
   position: relative;
@@ -222,4 +221,10 @@ input[type="submit"] {
   50% {
     transform: translate3d(0, 5px, 0);
   }
+}
+/* Default styles for larger screens */
+.bookcover {
+  width: 1300px;
+  height: 860px;
+  /* Other styles */
 }

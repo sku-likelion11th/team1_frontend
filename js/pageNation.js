@@ -22,7 +22,7 @@ function listPage() {
   document.querySelector(".listPage").innerHTML = "";
   if (thisPage != 1) {
     const prev = document.createElement("li");
-    prev.innerText = "PREV";
+    prev.innerText = "<<";
     prev.setAttribute("onclick", "changePage(" + (thisPage - 1) + ")");
     document.querySelector(".listPage").appendChild(prev);
   }
