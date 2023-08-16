@@ -80,15 +80,20 @@
 }
 .shelf img {
   height: 50px;
-
   margin-bottom: 200px;
   margin-left: auto;
-}
-
-.tape img {
-  height: 182px;
   position: relative;
-  top: 40px;
+}
+.tape-box {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 30px;
+  border: 1px solid red;
+}
+.tape-box img {
+  position: absolute;
+  height: 172px;
   z-index: 8;
 }
 
