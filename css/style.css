@@ -24,9 +24,11 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
-.display-container {
-  width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
+@media (min-width: 1200px) {
+  .display-container {
+    width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
 }
