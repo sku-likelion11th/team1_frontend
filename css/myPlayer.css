@@ -2,12 +2,7 @@ body {
   min-height: 100vh;
   line-height: 20px;
 }
-.radio_bttn img {
-  width: 60px;
-  position: relative;
-  left: 1102px;
-  top: 30px;
-}
+
 .container {
   min-width: 960px;
   margin-top: -70px;
@@ -17,8 +12,8 @@ body {
   border-radius: 9px;
   border: 1px solid #86737d;
   width: 1300px;
-  height: 820px;
-  margin: 25px auto;
+  height: 828px;
+  margin: 50px auto;
   position: relative;
   box-shadow: 5px 5px 5px 5px gray;
 }
@@ -43,6 +38,25 @@ body {
   bottom: 10px;
   display: flex;
   padding: 15px;
+}
+
+.radio_bttn {
+  position: absolute;
+  z-index: -1;
+}
+.radio_bttn img:nth-child(-n + 2) {
+  width: 60px;
+  position: relative;
+  left: 922px;
+  bottom: 12px;
+}
+.radio_bttn img:nth-child(3) {
+  width: 60px;
+  position: relative;
+  left: 925px;
+}
+.writingBttn {
+  margin: 3px 30px 0 0;
 }
 .radio-bg {
   position: absolute;
@@ -99,14 +113,15 @@ body {
 }
 
 .tape {
-  z-index: 100;
+  z-index: 1;
 }
 .item:hover img {
   transform: translate(0, -50px);
+  cursor: pointer;
 }
 
 .listPage {
-  padding: 10px;
+  padding: 22px 10px;
   text-align: center;
   list-style: none;
 }
@@ -128,7 +143,7 @@ body {
   position: fixed;
   bottom: 32px;
   margin-left: 30px;
-  z-index: 10;
+  z-index: 103;
 }
 .share-btn {
   position: relative;
@@ -153,11 +168,11 @@ body {
   transform: scale(0);
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
-  background: #6c353573;
+  background: rgba(194, 146, 146, 0.8);
   width: 330px;
   bottom: 50%;
   left: 50%;
-  color: #fff;
+  color: #ffffff;
   padding: 20px;
   transition: 0.5s;
   transition-delay: 0.5s;
@@ -249,13 +264,14 @@ body {
   border: 3px dotted #8aa1a1;
   width: 500px;
   position: absolute;
-  top: 73px;
+  top: 87px;
 }
 #modal .close-area {
   font-size: 30px;
   display: inline;
   margin-left: 670px;
   color: white;
+  cursor: pointer;
 }
 .top-color {
   background-color: #8aa1a1;

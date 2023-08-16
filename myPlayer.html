@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="./css/myPlayer.css" />
     <link rel="stylesheet" href="../css/help.css" />
+    <link rel="stylesheet" href="./css/button2.css" />
 
     <title>MYMY</title>
     <link
@@ -41,16 +42,16 @@
   </head>
   <body>
     <!-- page -->
-    <div class="radio_bttn">
-      <img src="./source/img/radio_bttn.png" />
-      <img src="./source/img/radio_bttn.png" />
-      <img src="./source/img/radio_rad_bttn.png" />
-    </div>
 
     <div class="bookcover">
       <div class="bookdot">
         <div class="page">
           <div class="container">
+            <div class="radio_bttn">
+              <img src="./source/img/radio_bttn.png" />
+              <img src="./source/img/radio_bttn.png" />
+              <img src="./source/img/radio_rad_bttn.png" />
+            </div>
             <div class="radio-bg row">
               <div class="col-4">
                 <img src="./source/img/radio_shadow.png" class="top-radio" />
@@ -65,8 +66,14 @@
                 <img src="./source/img/radio_shadow.png" />
               </div>
             </div>
-            <!-- help -->
-            <div class="help d-flex justify-content-end">
+            <!-- nav -->
+            <div class="help d-flex justify-content-end font-NeoDunggeunmo">
+              <button
+                onclick="location.href='writing.html'"
+                class="writingBttn custom-btn btn-9"
+              >
+                테이프 생성하기
+              </button>
               <input type="checkbox" id="navi-toggle" class="checkbox" />
               <label for="navi-toggle" class="button">
                 <span>
@@ -81,8 +88,10 @@
                 <img class="helpTv" src="../source/img/TV.png" alt="TV" />
               </nav>
             </div>
-            <div class="content-title-name font-NeoDunggeunmo">
-              (User name)이의 플레이어
+            <div class="d-flex flex-row">
+              <div class="content-title-name font-NeoDunggeunmo">
+                (User name)이의 플레이어
+              </div>
             </div>
             <!--share button-->
             <div class="share-container">
@@ -199,7 +208,7 @@
             </div>
             <div class="info d-flex flex-column align-items-center">
               <div class="info-title">제목: 해커톤 MYMY 파이팅!!</div>
-              <div class="sender">보낸사람 : 박시은</div>
+              <div class="sender mt-3">보낸사람 : 박시은</div>
 
               <hr class="hr-modal" />
 
@@ -237,6 +246,7 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+
     <script src="./js/pageNation.js"></script>
     <script src="./js/page.js"></script>
     <script src="./js/tts.js"></script>
