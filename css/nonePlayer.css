@@ -1,0 +1,138 @@
+body {
+  min-height: 100vh;
+  line-height: 20px;
+}
+
+.container {
+  min-width: 960px;
+  margin-top: -70px;
+}
+.bookcover {
+  background-color: black;
+  background-image: url("../source/img/bookcover_bg.jpg");
+  border-radius: 9px;
+  border: 1px solid #86737d;
+  width: 1300px;
+  height: 828px;
+  margin: 50px auto;
+  position: relative;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+.page {
+  background-color: #eeeeee;
+  border-radius: 9px;
+  position: absolute;
+  top: 10px;
+  left: 16px;
+  right: 16px;
+  bottom: 10px;
+  display: flex;
+  padding: 15px;
+}
+
+.radio_bttn {
+  position: absolute;
+  z-index: -1;
+}
+.radio_bttn img:nth-child(-n + 2) {
+  width: 60px;
+  position: relative;
+  left: 922px;
+  bottom: 12px;
+}
+.radio_bttn img:nth-child(3) {
+  width: 60px;
+  position: relative;
+  left: 925px;
+}
+.writingBttn {
+  margin: 3px 30px 0 0;
+}
+.radio-bg {
+  position: absolute;
+  left: 151px;
+  top: 148px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  column-gap: 20px;
+}
+.radio-bg img {
+  opacity: 0.5;
+  width: 289px;
+  height: 200px;
+}
+.top-radio {
+  margin-bottom: 94px;
+}
+.content-title {
+  display: flex;
+  align-items: center;
+}
+
+.content-title-name {
+  font-size: 30px;
+  padding: 40px 0 40px;
+  margin-right: 30px;
+}
+.list {
+  background-image: url("../source/img/paper_bg.jpg");
+
+  width: 1168px;
+  height: 607px;
+  border-radius: 9px;
+  border: 1px solid #adadad;
+}
+
+.item .img {
+  margin-top: 30px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.item .img img {
+  height: 200px;
+  margin-top: -10px;
+  transition: 0.5s;
+  z-index: 100;
+}
+.item .content {
+  padding: 0px 20px 0px 20px;
+  margin-bottom: -10px;
+}
+
+.tape {
+  z-index: 1;
+}
+.item:hover img {
+  transform: translate(0, -50px);
+  cursor: pointer;
+}
+
+.listPage {
+  padding: 22px 10px;
+  text-align: center;
+  list-style: none;
+}
+.listPage li {
+  background-color: #ffffffbd;
+  padding: 15px 20px 15px 20px;
+  display: inline-block;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.listPage .active {
+  background-color: #1d1925;
+  color: #fff;
+}

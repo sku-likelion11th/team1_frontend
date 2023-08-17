@@ -3,7 +3,7 @@
 }
 .bookcover {
   background-image: url("../source/img/");
-  background: linear-gradient(#484c50, #99a8b6, #484c50);
+  background: linear-gradient(#fffdfb, #e9e7d9, #fffdfb);
   border-radius: 9px;
   border: 1px solid #86737d;
   height: 860px;
@@ -39,7 +39,7 @@
 }
 .area {
   overflow: hidden;
-  background: linear-gradient(#484c50, #99a8b6, #484c50);
+  background: linear-gradient(#fffdfb, #e9e7d9, #fffdfb);
   height: 794px;
   border-radius: 10px;
 }
@@ -96,7 +96,7 @@
   text-shadow: 3px 2px 2px gray;
 }
 .login-container {
-  background: linear-gradient(#fffdfb, #e9e7d9, #fffdfb);
+  background: linear-gradient(#fffdfb, #fff2f2, #fffdfb);
   position: relative;
   bottom: 650px;
   width: 757px;
