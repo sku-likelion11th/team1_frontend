@@ -251,13 +251,155 @@ input[type="submit"] {
 }
 
 /* 미디어 쿼리 */
-@media (min-width: 1312px) {
-  /* .bookcover {
-    width: 1100px;
-  } */
-
-  .bookdot {
+@media (max-width: 990px) {
+  .title {
+    width: 560px;
   }
-  .area {
+  .login-container {
+    width: 557px;
+  }
+  .radio img {
+    width: 250px;
+  }
+  .volume {
+    height: 50px;
+  }
+  .bttn {
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    width: 200px;
+    height: 50px;
+  }
+  .main-title {
+    font-size: 60px;
+  }
+  .sub-tile {
+    font-size: 19px;
+  }
+  .radio_bttn {
+    right: 100px;
+  }
+
+  #forgot {
+    font-size: 13px;
+    left: 69px;
+  }
+  input:focus + label,
+  label {
+    left: 175px;
+  }
+
+  input:placeholder-shown + label {
+    font-size: 12pt;
+    margin-top: 4px;
+  }
+  input:focus + label,
+  label {
+    font-size: 10pt;
+  }
+}
+@media (max-width: 766px) {
+  .title {
+    width: 400px;
+  }
+  .login-container {
+    width: 397px;
+  }
+
+  input:focus + label,
+  label {
+    left: 115px;
+  }
+
+  .radio img {
+    width: 220px;
+  }
+  .volume {
+    height: 43px;
+  }
+
+  .main-title {
+    font-size: 60px;
+  }
+
+  .sub-tile {
+    font-size: 16px;
+  }
+
+  .radio_bttn {
+    right: 100px;
+  }
+
+  #forgot {
+    font-size: 12px;
+    left: 69px;
+  }
+  input:focus + label,
+  label {
+    left: 95px;
+  }
+
+  input:placeholder-shown + label {
+    font-size: 12pt;
+    margin-top: 4px;
+  }
+  input:focus + label,
+  label {
+    font-size: 10pt;
+  }
+  .input-box > input {
+    font-size: 14pt;
+    width: 53%;
+  }
+}
+@media (max-width: 460px) {
+  .title {
+    width: 330px;
+  }
+  .login-container {
+    width: 327px;
+  }
+
+  .radio img {
+    width: 210px;
+  }
+  .volume {
+    height: 40px;
+  }
+  .bttn {
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    width: 180px;
+    height: 50px;
+  }
+  .main-title {
+    font-size: 40px;
+  }
+
+  .sub-tile {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .radio_bttn {
+    right: 60px;
+  }
+  #forgot {
+    font-size: 13px;
+    left: 54px;
+  }
+
+  input:placeholder-shown + label {
+    font-size: 12pt;
+    margin-top: 4px;
+  }
+  input:focus + label,
+  label {
+    font-size: 12pt;
+    left: 68px;
+  }
+  .input-box > input {
+    font-size: 14pt;
+    width: 60%;
   }
 }
