@@ -1,25 +1,7 @@
 * {
   box-sizing: border-box;
 }
-body {
-  margin: 0;
-  background: #eaedf1;
-  font-family: "Lato", sans-serif;
-}
-.header {
-  background: white;
-  padding: 30px;
-  text-align: center;
-}
-.header h1 {
-  font-weight: 300;
-  display: inline;
-}
-h2 {
-  color: #89867e;
-  text-align: center;
-  font-weight: 300;
-}
+
 .color {
   width: 350px;
   margin: 0 auto;
@@ -113,42 +95,6 @@ a[class*="btn"] {
 input[class*="btn"],
 button[class*="btn"] {
   border: 0;
-}
-
-/* Here you can change the button sizes */
-.btn.large,
-.btn-two.large,
-.btn-effect.large {
-  padding: 20px 40px;
-  font-size: 22px;
-}
-.btn.small,
-.btn-two.small,
-.btn-gradient.small,
-.btn-effect.small {
-  padding: 8px 18px;
-  font-size: 14px;
-}
-.btn.mini,
-.btn-two.mini,
-.btn-gradient.mini,
-.btn-effect.mini {
-  padding: 4px 12px;
-  font-size: 12px;
-}
-.btn.block,
-.btn-two.block,
-.btn-gradient.block,
-.btn-effect.block {
-  display: block;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-.btn-gradient.large {
-  padding: 15px 45px;
-  font-size: 22px;
 }
 
 /* Colors for .btn and .btn-two */

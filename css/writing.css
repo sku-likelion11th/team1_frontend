@@ -1,5 +1,8 @@
-.display-container {
-  overflow: hidden;
+.container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 .bookcover {
   background-color: #b4d1da;
@@ -36,16 +39,16 @@
   height: 250px;
   position: absolute;
   z-index: 2;
-  top: 0px;
+  top: 14px;
 }
 .tape-box {
-  position: relative;
+  position: absolute;
   background-color: hsla(0, 0%, 0%, 0.8);
   border-radius: 9px;
   height: 500px;
   width: 500px;
   color: white;
-  bottom: 0;
+  bottom: 40px;
   margin-top: 100px;
   box-shadow: 5px 5px 5px 5px gray inset;
   border: 1px solid black;
@@ -61,16 +64,18 @@
   padding-top: 23px;
 }
 .input-text p {
-  margin-left: 30px;
+  margin-left: 34px;
 }
 .filmstripe-top {
   position: absolute;
+  left: 0;
   width: 499px;
   height: 20px;
   top: 55px;
 }
 .filmstripe-bottom {
   position: absolute;
+  left: 0;
   width: 499px;
   height: 20px;
   bottom: 68px;
@@ -106,6 +111,7 @@ input:nth-child(2) {
 .bttn {
   margin-top: 45px;
   margin-left: 30px;
+  font-size: 16px;
 }
 .tapeChange,
 .musicChange {
@@ -205,6 +211,10 @@ input:nth-child(2) {
   position: absolute;
   bottom: 15px;
   left: 170px;
+}
+.btn.mini {
+  padding: 4px 12px;
+  font-size: 12px;
 }
 
 /* musicSelection modal */
@@ -325,5 +335,277 @@ input:nth-child(2) {
   }
   50% {
     transform: translate3d(0, 5px, 0);
+  }
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 766px) {
+  .page > img {
+    height: 210px;
+  }
+  .tape-box {
+    width: 400px;
+    bottom: 76px;
+  }
+
+  .filmstripe-top {
+    width: 399px;
+  }
+  .filmstripe-bottom {
+    width: 399px;
+  }
+
+  textarea {
+    width: 338px;
+  }
+  input:nth-child(1) {
+    width: 338px;
+  }
+  .bttn {
+    font-size: 13px;
+  }
+  .bttn button {
+    width: 166px;
+  }
+
+  #send {
+    width: 66px;
+    margin-right: 30px;
+  }
+  /* tapeChange modal */
+  #modal-tape .input-box {
+    width: 400px;
+    top: 400px;
+  }
+  #modal-tape .filmstripe-top {
+    width: 399px;
+  }
+  #modal-tape .filmstripe-bottom {
+    width: 399px;
+  }
+  #modal-tape .input-text {
+    height: 335px;
+  }
+  #modal-tape .title {
+    padding-top: 17px;
+    font-size: 24px;
+  }
+  #modal-tape #tapeImage {
+    width: 240px;
+    margin-top: 30px;
+  }
+  #modal-tape .start-bttn {
+    top: 195px;
+    left: 17px;
+    font-size: 70px;
+  }
+  #modal-tape .end-bttn {
+    top: 195px;
+    right: 17px;
+    font-size: 70px;
+  }
+  #modal-tape .closeBttn {
+    left: 120px;
+  }
+
+  /* musicSelection modal */
+  #modal-music .music-box {
+    width: 400px;
+    top: 400px;
+  }
+  #modal-music .filmstripe-top {
+    width: 399px;
+  }
+  #modal-music .filmstripe-bottom {
+    width: 399px;
+  }
+
+  #modal-music .music-text {
+    color: black;
+    background-color: white;
+    margin-top: 75px;
+    height: 335px;
+  }
+  #modal-music .music-title {
+    padding-top: 17px;
+    font-size: 24px;
+  }
+
+  #modal-music .closeBttn {
+    left: 120px;
+  }
+  #modal-music .audio-box {
+    font-size: 14px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    width: 430px;
+  }
+  .page > img {
+    height: 180px;
+    top: 50px;
+  }
+  .tape-box {
+    width: 300px;
+  }
+  .filmstripe-top {
+    width: 299px;
+  }
+  .filmstripe-bottom {
+    width: 299px;
+  }
+
+  textarea {
+    width: 232px;
+  }
+  input:nth-child(1) {
+    width: 232px;
+  }
+  .bttn {
+    font-size: 13px;
+  }
+  .bttn button {
+    margin-right: 0px;
+    width: 56px;
+  }
+
+  #send {
+    margin-left: 40px;
+  }
+  /* tapeChange modal */
+  #modal-tape .input-box {
+    width: 300px;
+    height: 411px;
+    top: 400px;
+  }
+  #modal-tape .filmstripe-top {
+    top: 66px;
+    width: 299px;
+    height: 10px;
+  }
+  #modal-tape .filmstripe-bottom {
+    width: 299px;
+    height: 10px;
+    bottom: 68px;
+  }
+  #modal-tape .input-text {
+    height: 263px;
+  }
+  #modal-tape .title {
+    padding-top: 17px;
+    font-size: 20px;
+  }
+  #modal-tape #tapeImage {
+    width: 205px;
+    margin-top: 16px;
+  }
+  #modal-tape .start-bttn {
+    top: 175px;
+    left: 1px;
+    font-size: 61px;
+  }
+  #modal-tape .end-bttn {
+    top: 175px;
+    right: 1px;
+    font-size: 61px;
+  }
+  #modal-tape .closeBttn {
+    left: 94px;
+    width: 102px;
+    height: 37px;
+    font-size: 15px;
+  }
+
+  /* musicSelection modal */
+  #modal-music .music-box {
+    width: 300px;
+    height: 411px;
+    top: 400px;
+  }
+  #modal-music .filmstripe-top {
+    top: 66px;
+    width: 299px;
+    height: 10px;
+  }
+  #modal-music .filmstripe-bottom {
+    width: 299px;
+    height: 10px;
+    bottom: 68px;
+  }
+
+  #modal-music .music-text {
+    height: 263px;
+  }
+  #modal-music .music-title {
+    padding-top: 17px;
+    margin-bottom: 15px;
+    font-size: 20px;
+  }
+
+  #modal-music .closeBttn {
+    left: 94px;
+    width: 102px;
+    height: 37px;
+    font-size: 15px;
+  }
+  #modal-music .audio-box {
+    font-size: 13px;
+    padding: 5px;
+  }
+  #modal-music .musicBtn {
+    margin: -12px 0px 2px 20px;
+  }
+  .btn.mini {
+    padding: 3px 9px;
+    font-size: 7px;
+  }
+}
+@media (max-width: 460px) {
+  .container {
+    width: 330px;
+  }
+
+  .page > img {
+    height: 140px;
+    top: 71px;
+  }
+  .tape-box {
+    width: 230px;
+    top: 30px;
+  }
+  .filmstripe-top {
+    width: 228px;
+    height: 14px;
+    top: 62px;
+  }
+  .filmstripe-bottom {
+    width: 228px;
+    height: 14px;
+  }
+
+  textarea {
+    width: 172px;
+  }
+  input:nth-child(1) {
+    width: 172px;
+  }
+  .title p {
+    font-size: 14px;
+  }
+  .textarea p {
+    font-size: 14px;
+  }
+  .bttn {
+    font-size: 11px;
+  }
+  .bttn button {
+    width: 50px;
+  }
+
+  #send {
+    margin-left: 9px;
+    margin-right: 0px;
+    width: 50px;
   }
 }
