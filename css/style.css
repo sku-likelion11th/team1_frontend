@@ -23,12 +23,9 @@
 body {
   background-color: rgb(255, 255, 255);
 }
-
-@media (min-width: 1200px) {
-  .display-container {
-    width: 1300px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-  }
+.display-container {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }

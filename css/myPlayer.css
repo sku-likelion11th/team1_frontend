@@ -8,7 +8,8 @@ body {
   margin-top: -70px;
 }
 .bookcover {
-  background-color: rgb(45, 45, 45);
+  background-color: black;
+  background-image: url("../source/img/bookcover_bg.jpg");
   border-radius: 9px;
   border: 1px solid #86737d;
   width: 1300px;
