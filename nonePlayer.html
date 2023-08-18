@@ -42,75 +42,88 @@
   </head>
   <body>
     <!-- page -->
+    <div class="container">
+      <div class="row">
+        <div class="bookcover">
+          <div class="bookdot">
+            <div class="page">
+              <div class="container">
+                <div class="radio_bttn">
+                  <img src="./source/img/radio_bttn.png" />
+                  <img src="./source/img/radio_bttn.png" />
+                  <img src="./source/img/radio_rad_bttn.png" />
+                </div>
 
-    <div class="bookcover">
-      <div class="bookdot">
-        <div class="page">
-          <div class="container">
-            <div class="radio_bttn">
-              <img src="./source/img/radio_bttn.png" />
-              <img src="./source/img/radio_bttn.png" />
-              <img src="./source/img/radio_rad_bttn.png" />
-            </div>
-            <div class="radio-bg row">
-              <div class="col-4">
-                <img src="./source/img/radio_shadow.png" class="top-radio" />
-                <img src="./source/img/radio_shadow.png" />
-              </div>
-              <div class="col-4">
-                <img src="./source/img/radio_shadow.png" class="top-radio" />
-                <img src="./source/img/radio_shadow.png" />
-              </div>
-              <div class="col-4">
-                <img src="./source/img/radio_shadow.png" class="top-radio" />
-                <img src="./source/img/radio_shadow.png" />
-              </div>
-            </div>
-            <!-- nav -->
-            <div class="help d-flex justify-content-end font-NeoDunggeunmo">
-              <button
-                onclick="location.href='writing.html'"
-                class="writingBttn custom-btn btn-9"
-              >
-                테이프 생성하기
-              </button>
-              <button
-                onclick="location.href='signup.html'"
-                class="writingBttn custom-btn btn-9"
-              >
-                로그인 하기
-              </button>
-              <input type="checkbox" id="navi-toggle" class="checkbox" />
-              <label for="navi-toggle" class="button">
-                <span>
-                  <img
-                    class="icon"
-                    src="../source/img/question-icon.png"
-                  />&nbsp;</span
-                >
-              </label>
-              <div class="background">&nbsp;</div>
-              <nav class="nav display-container">
-                <img class="helpTv" src="../source/img/TV.png" alt="TV" />
-              </nav>
-            </div>
-            <div class="d-flex flex-row">
-              <div class="content-title-name font-NeoDunggeunmo">
-                (User name)이의 플레이어
-              </div>
-            </div>
+                <div class="row radio-bg">
+                  <div class="col-4 col-md-6">
+                    <img src="./source/img/radio_shadow.png" />
+                  </div>
+                  <div class="col-4 col-md-6">
+                    <img src="./source/img/radio_shadow.png" />
+                  </div>
+                  <div class="col-4 col-md-6">
+                    <img src="./source/img/radio_shadow.png" />
+                  </div>
+                  <div class="col-4 col-md-6">
+                    <img src="./source/img/radio_shadow.png" />
+                  </div>
+                  <div class="col-4 col-md-6">
+                    <img src="./source/img/radio_shadow.png" />
+                  </div>
+                  <div class="col-4 col--6">
+                    <img src="./source/img/radio_shadow.png" />
+                  </div>
+                </div>
+                <!-- nav -->
+                <div class="help d-flex justify-content-end font-NeoDunggeunmo">
+                  <div class="btn-box d-flex">
+                    <button
+                      onclick="location.href='writing.html'"
+                      class="writingBttn custom-btn btn-9"
+                    >
+                      테이프 생성하기
+                    </button>
+                    <button
+                      onclick="location.href='signup.html'"
+                      class="writingBttn custom-btn btn-9"
+                    >
+                      로그인 하기
+                    </button>
+                  </div>
+                  <input type="checkbox" id="navi-toggle" class="checkbox" />
+                  <label for="navi-toggle" class="button">
+                    <span>
+                      <img
+                        class="icon"
+                        src="../source/img/question-icon.png"
+                      />&nbsp;</span
+                    >
+                  </label>
+                  <div class="background">&nbsp;</div>
+                  <nav class="nav display-container">
+                    <img class="helpTv" src="../source/img/TV.png" alt="TV" />
+                  </nav>
+                </div>
 
-            <div class="list"></div>
-            <ul class="listPage">
-              <li class="active">1</li>
-              <li>2</li>
-              <li>3</li>
-            </ul>
+                <div class="d-flex flex-row">
+                  <div class="content-title-name font-NeoDunggeunmo">
+                    (User name)이의 플레이어
+                  </div>
+                </div>
+                <!--share button-->
+
+                <div class="list"></div>
+                <ul class="listPage">
+                  <li class="active">1</li>
+                  <li>2</li>
+                  <li>3</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
