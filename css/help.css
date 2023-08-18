@@ -147,3 +147,52 @@
   top: 0;
   transform: rotate(-135deg);
 }
+
+/* 미디어쿼리 */
+@media (max-width: 1299px) {
+  /* help - page styling */
+  .help {
+    margin-right: -22px;
+  }
+  .helpTv {
+    width: 760px;
+  }
+  /* help - hamburger */
+  .button {
+    height: 3rem;
+    width: 3rem;
+  }
+  .background {
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .help {
+    margin-right: 65px;
+  }
+}
+@media (max-width: 992px) {
+  .help {
+    margin-right: -45px;
+  }
+  .helpTv {
+    width: 630px;
+  }
+}
+@media (max-width: 767px) {
+  .helpTv {
+    width: 458px;
+  }
+}
+@media (max-width: 570px) {
+  .helpTv {
+    width: 360px;
+  }
+}
+@media (max-width: 468px) {
+  .helpTv {
+    width: 300px;
+  }
+}

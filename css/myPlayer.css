@@ -141,9 +141,8 @@ body {
 
 /*---------share button---------*/
 .share-container {
-  position: fixed;
-  bottom: 32px;
-  margin-left: 30px;
+  position: absolute;
+  bottom: 17px;
   z-index: 103;
 }
 .share-btn {
@@ -152,9 +151,9 @@ body {
   background: #fff;
   color: #f0a3a1;
   border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  font-size: 25px;
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
   padding-right: 3px;
   cursor: pointer;
   z-index: 2;
@@ -206,6 +205,7 @@ body {
   align-items: center;
   border-radius: 40px;
   background-color: #fff;
+  overflow: hidden;
 
   padding: 0 10px;
 }
@@ -571,6 +571,35 @@ audio {
   .top-radio {
     margin-bottom: 124px;
   }
+  /* share-btn */
+  .share-btn {
+    width: 60px;
+    height: 60px;
+    font-size: 12px;
+  }
+
+  .share-options {
+    width: 285px;
+    height: 113px;
+  }
+
+  .share-options.active {
+    transform: scale(1);
+    transition-delay: 0s;
+  }
+
+  .title {
+    font-size: 27px;
+  }
+
+  .bi-share-fill {
+    font-size: 25px;
+  }
+
+  .copy-btn {
+    font-size: 19px;
+  }
+
   /* modal */
   .input-box {
     width: 380px;
@@ -661,7 +690,6 @@ audio {
     width: 280px;
     height: 490px;
     line-height: 14px;
-    margin-top: -100px;
   }
   .modal-window {
     width: 278px;
@@ -724,6 +752,33 @@ audio {
     font-size: 12px;
     bottom: 6px;
     z-index: 10;
+  }
+  /* share-btn */
+  .share-btn {
+    width: 50px;
+    height: 50px;
+  }
+
+  .share-options {
+    width: 225px;
+    height: 103px;
+  }
+  .link-container {
+    height: 35px;
+    overflow: hidden;
+  }
+  .title {
+    font-size: 22px;
+  }
+  .bi-share-fill {
+    font-size: 20px;
+  }
+
+  .copy-btn {
+    font-size: 14px;
+  }
+  .link-container p {
+    font-size: 10px;
   }
 }
 
