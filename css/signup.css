@@ -1,574 +1,401 @@
-/*모니터*/
-@media (min-width: 1200px) {
-  .display-container {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background: white;
-    border-radius: 600px;
-    width: 1230px;
-    height: 684px;
-  }
-  .bookcover {
-    background-color: #b4d1da;
-    border-radius: 600px;
-    border: 1px solid #86737d;
-    width: 1300px;
-    height: 750px;
-    margin: 25px auto;
-    position: relative;
-  }
+.container {
+  overflow: hidden;
+}
+.bookcover {
+  background-image: url("../source/img/");
+  background: linear-gradient(#fffdfb, #e9e7d9, #fffdfb);
+  border-radius: 9px;
+  border: 1px solid #86737d;
+  height: 860px;
+  margin: 25px auto;
+  position: relative;
+}
 
-  .bookdot {
-    border-radius: 600px;
-    border: 2px dashed #ffffff;
-    padding: 15px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-  }
+.bookdot {
+  border-radius: 9px;
+  border: 2px dashed #ffffff;
+  padding: 15px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  overflow: hidden;
+}
 
-  .main-title {
-    padding-top: 40px;
-    font-size: 60px;
-    color: #a0c49d;
-    text-shadow: 3px 2px 2px gray;
-  }
-  .sub-tile {
-    font-size: 24px;
-    color: #a0c49d;
-    padding-bottom: 50px;
-    margin-bottom: -70px;
-  }
-  .heart_json {
-    height: 180px;
-    margin-bottom: -20px;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  form {
-    padding: 10px;
-  }
+.radio_bttn {
+  position: absolute;
+  right: 300px;
+}
 
-  .input-box {
-    position: relative;
-    margin: 10px 0;
-  }
-  .input-box > input {
-    background: transparent;
-    border: none;
-    border-bottom: solid 1px #ccc;
-    padding: 20px 0px 5px 0px;
-    font-size: 14pt;
-    width: 40%;
-  }
-  input::placeholder {
-    color: transparent;
-  }
-  input:placeholder-shown + label {
-    color: #aaa;
-    font-size: 14pt;
-    top: 15px;
-  }
-  input:focus + label,
-  label {
-    color: #8aa1a1;
-    font-size: 10pt;
-    pointer-events: none;
-    position: absolute;
-    left: 365px;
-    top: 0px;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-  }
+.radio_bttn img:nth-child(-n + 2) {
+  width: 50px;
+  position: relative;
+  top: 20px;
+}
+.radio_bttn img:nth-child(3) {
+  width: 50px;
+  position: relative;
+  top: 30px;
+}
+.area {
+  overflow: hidden;
+  background: linear-gradient(#fffdfb, #e9e7d9, #fffdfb);
+  height: 794px;
+  border-radius: 10px;
+}
+.title {
+  width: 760px;
+  position: relative;
+  border-radius: 30px;
+  border: 1px solid rgb(78, 78, 78, 0.6);
+  padding: 30px;
+  height: 690px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: white;
+  z-index: 10;
+}
+.main-title {
+  font-size: 60px;
+  color: #a0c49d;
+  margin-top: 2px;
+  position: relative;
+  bottom: 32px;
+}
 
-  input:focus,
-  input:not(:placeholder-shown) {
-    border-bottom: solid 1px #8aa1a1;
-    outline: none;
+.sub-tile {
+  font-size: 24px;
+  color: #a0c49d;
+  position: relative;
+  bottom: 50px;
+}
+.radio {
+  z-index: 3;
+}
+.radio img {
+  position: relative;
+  bottom: 527px;
+  width: 270px;
+  z-index: 30;
+}
+.volume {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  top: 280px;
+  height: 60px;
+  z-index: 20;
+}
+
+.main-title {
+  padding-top: 40px;
+  font-size: 60px;
+  color: #a0c49d;
+  text-shadow: 3px 2px 2px gray;
+}
+.login-container {
+  background: linear-gradient(#fffdfb, #fff2f2, #fffdfb);
+  position: relative;
+  bottom: 650px;
+  width: 757px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  border-top: 1px solid rgb(194, 194, 194);
+  z-index: 10;
+}
+form {
+  padding: 10px;
+}
+
+.input-box {
+  position: relative;
+  margin: 10px 0;
+  top: 130px;
+  left: 0;
+  right: 0;
+}
+.input-box > input {
+  background: transparent;
+  border: none;
+  border-bottom: solid 1px rgb(53, 53, 53, 0.5);
+  padding: 20px 0px 5px 0px;
+  font-size: 14pt;
+  width: 40%;
+}
+
+input::placeholder {
+  color: transparent;
+}
+input:placeholder-shown + label {
+  color: #aaa;
+  font-size: 14pt;
+  top: 15px;
+}
+input:focus + label,
+label {
+  color: #8aa1a1;
+  font-size: 10pt;
+  pointer-events: none;
+  position: absolute;
+  left: 235px;
+
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+input:focus,
+input:not(:placeholder-shown) {
+  border-bottom: solid 1px #8aa1a1;
+  outline: none;
+}
+input[type="submit"] {
+  background-color: #8aa1a1;
+  border: none;
+  color: white;
+  border-radius: 20px;
+  width: 40%;
+  height: 50px;
+  font-size: 14pt;
+  margin-top: 30px;
+  margin-left: 25px;
+}
+#forgot {
+  text-align: center;
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px 18px;
+  position: relative;
+  left: 100px;
+  top: 130px;
+  margin-bottom: 30px;
+}
+#join {
+  font-size: 12pt;
+  color: rgb(164, 164, 164);
+  margin: 10px 0px;
+}
+.bttn {
+  position: relative;
+  top: 70px;
+  color: white;
+  border-radius: 10px;
+  font-size: 23px;
+  width: 270px;
+  height: 60px;
+  font-size: 14pt;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bttn :nth-child(1) {
+  background-color: #e06864;
+  border: solid 2px black;
+  margin-top: -10px;
+  box-shadow: 3px 2px 2px rgb(156, 156, 156);
+}
+
+/* waterDrop */
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
   }
-  input[type="submit"] {
-    background-color: #8aa1a1;
-    border: none;
-    color: white;
-    border-radius: 20px;
-    width: 40%;
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+
+/* 미디어 쿼리 */
+@media (max-width: 990px) {
+  .title {
+    width: 560px;
+  }
+  .login-container {
+    width: 557px;
+  }
+  .radio img {
+    width: 250px;
+  }
+  .volume {
     height: 50px;
-    font-size: 14pt;
-    margin-top: 30px;
-    margin-left: 25px;
-  }
-  #forgot {
-    text-align: center;
-    font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
-    position: relative;
-    left: 190px;
-  }
-  #join {
-    font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
   }
   .bttn {
-    color: white;
-    border-radius: 10px;
-    font-size: 23px;
-    width: 300px;
-    margin-top: 10px;
-    height: 150px;
-    font-size: 14pt;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bttn :nth-child(1) {
-    background-color: #e06864;
-    border: solid 2px black;
-    margin-top: 40px;
-  }
-  .bttn :nth-child(2) {
-    background-color: #2a8eb5;
-    border: solid 2px black;
-  }
-}
-/*태블릿 가로*/
-@media (min-width: 992px) and (max-width: 1199px) {
-  .display-container {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background: white;
-    border-radius: 600px;
-    width: 100%;
-    height: 533px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bookcover {
-    background-color: #b4d1da;
-    border-radius: 600px;
-    border: 1px solid #86737d;
-    width: 90%;
-    height: 600px;
-    margin: 25px auto;
-    position: relative;
-  }
-
-  .bookdot {
-    border-radius: 600px;
-    border: 2px dashed #ffffff;
-    padding: 15px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-  }
-
-  .main-title {
-    padding-top: 24px;
-    font-size: 40px;
-    color: #a0c49d;
-    text-shadow: 3px 2px 2px gray;
-  }
-  .sub-tile {
-    font-size: 18px;
-    color: #a0c49d;
-    padding-bottom: 50px;
-    margin-bottom: -70px;
-  }
-  .heart_json {
-    height: 160px;
-    margin-bottom: -40px;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  form {
-    padding: 10px;
-  }
-
-  .input-box {
-    position: relative;
-    margin: 10px 0;
-  }
-  .input-box > input {
-    background: transparent;
-    border: none;
-    border-bottom: solid 1px #ccc;
-    padding: 20px 0px 5px 0px;
-    font-size: 14pt;
-    width: 40%;
-  }
-  input::placeholder {
-    color: transparent;
-  }
-  input:placeholder-shown + label {
-    color: #aaa;
-    font-size: 14pt;
-    top: 15px;
-  }
-  input:focus + label,
-  label {
-    color: #8aa1a1;
-    font-size: 10pt;
-    pointer-events: none;
-    position: absolute;
-    left: 245px;
-    top: 0px;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-  }
-
-  input:focus,
-  input:not(:placeholder-shown) {
-    border-bottom: solid 1px #8aa1a1;
-    outline: none;
-  }
-  input[type="submit"] {
-    background-color: #8aa1a1;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    width: 40%;
-    height: 40px;
-    font-size: 14pt;
-    margin-top: 30px;
-    margin-left: 0px;
-  }
-  #forgot {
-    text-align: center;
-    font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
-    position: relative;
-    left: 190px;
-  }
-  #join {
-    font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
-  }
-  .bttn {
-    color: white;
-    border-radius: 10px;
-    font-size: 23px;
-    width: 300px;
-    margin-top: 10px;
-    height: 150px;
-    font-size: 14pt;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bttn :nth-child(1) {
-    background-color: #e06864;
-    border: solid 2px black;
-    margin-top: 40px;
-  }
-  .bttn :nth-child(2) {
-    background-color: #2a8eb5;
-    border: solid 2px black;
-  }
-}
-/*태블릿 세로*/
-@media (min-width: 768px) and (max-width: 991px) {
-  .display-container {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background: white;
-    border-radius: 190px;
-    width: 100%;
-    height: 1130px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bookcover {
-    background-color: #b4d1da;
-    border-radius: 200px;
-    border: 1px solid #86737d;
-    width: 90%;
-    height: 1200px;
-    margin: 25px auto;
-    position: relative;
-  }
-
-  .bookdot {
-    border-radius: 200px;
-    border: 2px dashed #ffffff;
-    padding: 15px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-  }
-  .title{
-    width: 427px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .main-title {
-    padding-top: 118px;
-    font-size: 100px;
-    color: #a0c49d;
-    text-shadow: 3px 2px 2px gray;
-    line-height: normal;
-  }
-  .sub-tile {
-    font-size: 27px;
-    color: #a0c49d;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    margin-bottom: -70px;
-  }
-  .heart_json {
-    height: 290px;
-    margin-bottom: -40px;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  form {
-    padding: 10px;
-  }
-
-  .input-box {
-    position: relative;
-    margin: 10px 0;
-  }
-  .input-box > input {
-    background: transparent;
-    border: none;
-    border-bottom: solid 1px #ccc;
-    padding: 30px 0px 5px 0px;
-    font-size: 15pt;
-    width: 40%;
-  }
-  input::placeholder {
-    color: transparent;
-  }
-  input:placeholder-shown + label {
-    color: #aaa;
-    font-size: 18pt;
-    top: 15px;
-  }
-  input:focus + label,
-  label {
-    color: #8aa1a1;
-    font-size: 10pt;
-    pointer-events: none;
-    position: absolute;
-    left: 180px;
-    top: 0px;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-  }
-
-  input:focus,
-  input:not(:placeholder-shown) {
-    border-bottom: solid 1px #8aa1a1;
-    outline: none;
-  }
-  input[type="submit"] {
-    background-color: #8aa1a1;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    width: 40%;
-    height: 60px;
-    font-size: 20pt;
-    margin-top: 30px;
-    margin-left: 0px;
-  }
-  #forgot {
-    text-align: center;
-    font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
-    position: relative;
-    left: 190px;
-  }
-  #join {
-    font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
-  }
-  .bttn {
-    color: white;
-    border-radius: 10px;
-    font-size: 23px;
-    width: 300px;
-    margin-top: 10px;
-    height: 150px;
-    font-size: 14pt;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bttn :nth-child(1) {
-    background-color: #e06864;
-    border: solid 2px black;
-    margin-top: 40px;
-  }
-  .bttn :nth-child(2) {
-    background-color: #2a8eb5;
-    border: solid 2px black;
-  }
-}
-/*모바일*/
-@media (max-width: 767px){
-	.display-container {
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background: white;
-    border-radius: 100px;
-    width: 100%;
-    height: 580px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bookcover {
-    background-color: #b4d1da;
-    border-radius: 110px;
-    border: 1px solid #86737d;
-    width: 90%;
-    height: 650px;
-    margin: 25px auto;
-    position: relative;
-  }
-
-  .bookdot {
-    border-radius: 110px;
-    border: 2px dashed #ffffff;
-    padding: 15px;
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-  }
-  .title{
+    font-size: 16px;
+    padding: 10px 0 10px 0;
     width: 200px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 50px;
   }
   .main-title {
-    padding-top: 60px;
-    font-size: 50px;
-    color: #a0c49d;
-    text-shadow: 3px 2px 2px gray;
-    line-height: normal;
+    font-size: 60px;
   }
   .sub-tile {
-    font-size: 12px;
-    color: #a0c49d;
-    padding-top: 12px;
-    padding-bottom: -72px;
-    margin-bottom: -23px;
+    font-size: 19px;
   }
-  .heart_json {
-    height: 140px;
-    margin-bottom: -40px;
-  }
-  header {
-    display: flex;
-    justify-content: center;
-  }
-  form {
-    padding: 10px;
+  .radio_bttn {
+    right: 100px;
   }
 
-  .input-box {
-    position: relative;
-    margin: 10px 0;
-  }
-  .input-box > input {
-    background: transparent;
-    border: none;
-    border-bottom: solid 1px #ccc;
-    padding: 5px 0px 5px 0px;
-    font-size: 15pt;
-    width: 40%;
-  }
-  input::placeholder {
-    color: transparent;
-  }
-  input:placeholder-shown + label {
-    color: #aaa;
-    font-size: 10pt;
-    top: 15px;
+  #forgot {
+    font-size: 13px;
+    left: 69px;
   }
   input:focus + label,
   label {
-    color: #8aa1a1;
-    font-size: 10pt;
-    pointer-events: none;
-    position: absolute;
-    left: 76px;
-    top: 0px;
-    transition: all 0.2s ease;
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
+    left: 175px;
   }
 
-  input:focus,
-  input:not(:placeholder-shown) {
-    border-bottom: solid 1px #8aa1a1;
-    outline: none;
+  input:placeholder-shown + label {
+    font-size: 12pt;
+    margin-top: 4px;
   }
-  input[type="submit"] {
-    background-color: #8aa1a1;
-    border: none;
-    color: white;
-    border-radius: 10px;
-    width: 50%;
-    height: 29px;
+  input:focus + label,
+  label {
     font-size: 10pt;
-    margin-top: 20px;
-    margin-left: 0px;
   }
+}
+@media (max-width: 766px) {
+  .title {
+    width: 400px;
+  }
+  .login-container {
+    width: 397px;
+  }
+
+  input:focus + label,
+  label {
+    left: 115px;
+  }
+
+  .radio img {
+    width: 220px;
+  }
+  .volume {
+    height: 43px;
+  }
+
+  .main-title {
+    font-size: 50px;
+  }
+
+  .sub-tile {
+    font-size: 16px;
+  }
+
+  .radio_bttn {
+    right: 100px;
+  }
+
   #forgot {
-    text-align: center;
-    font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
-    position: relative;
-    left: 190px;
+    font-size: 12px;
+    left: 69px;
   }
-  #join {
+  input:focus + label,
+  label {
+    left: 95px;
+  }
+
+  input:placeholder-shown + label {
     font-size: 12pt;
-    color: rgb(164, 164, 164);
-    margin: 10px 0px;
+    margin-top: 4px;
+  }
+  input:focus + label,
+  label {
+    font-size: 10pt;
+  }
+  .input-box > input {
+    font-size: 14pt;
+    width: 53%;
+  }
+}
+@media (max-width: 460px) {
+  .title {
+    width: 330px;
+  }
+  .login-container {
+    width: 327px;
+  }
+
+  .radio img {
+    width: 210px;
+  }
+  .volume {
+    height: 40px;
   }
   .bttn {
-    color: white;
-    border-radius: 10px;
-    font-size: 23px;
-    width: 300px;
+    font-size: 16px;
+    padding: 10px 0 10px 0;
+    width: 180px;
+    height: 10px;
+  }
+  .main-title {
+    font-size: 40px;
+  }
+
+  .sub-tile {
     margin-top: 10px;
-    height: 150px;
+    font-size: 14px;
+  }
+
+  .radio_bttn {
+    right: 60px;
+  }
+  #forgot {
+    font-size: 13px;
+    left: 54px;
+  }
+
+  input:placeholder-shown + label {
+    font-size: 12pt;
+    margin-top: 4px;
+  }
+  input:focus + label,
+  label {
+    font-size: 12pt;
+    left: 68px;
+  }
+  .input-box > input {
     font-size: 14pt;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .bttn :nth-child(1) {
-    background-color: #e06864;
-    border: solid 2px black;
-    margin-top: 40px;
-  }
-  .bttn :nth-child(2) {
-    background-color: #2a8eb5;
-    border: solid 2px black;
+    width: 60%;
   }
 }
