@@ -338,9 +338,12 @@ audio {
 }
 .btn {
   position: absolute;
-  bottom: -68px;
+  bottom: -77px;
+  width: 300px;
 }
 .message {
+  width: 158px;
+  height: 49px;
   background-color: #f0a3a1;
   color: white;
   padding: 6px;
@@ -370,6 +373,10 @@ audio {
 #stopButton:hover {
   background-color: #8aa1a1;
 }
+.btn {
+  bottom: -68px;
+}
+
 .sentance {
   height: 240px;
   width: 500px;
@@ -379,8 +386,8 @@ audio {
 }
 .sentance p {
   padding: 16px;
-  margin-right: 50px;
-  margin-left: 50px;
+  margin-right: 16px;
+  margin-left: 3px;
 }
 /* 스크롤바 */
 .sentance::-webkit-scrollbar {
@@ -484,7 +491,7 @@ audio {
   }
 
   .hr-modal {
-    width: 400px;
+    width: 389px;
   }
   #modal .close-area {
     margin-left: 510px;
@@ -514,7 +521,13 @@ audio {
   }
   .sentance {
     height: 240px;
-    width: 500px;
+    width: 390px;
+  }
+  .sentance p {
+    padding: 16px;
+    margin-right: 6px;
+    margin-left: 3px;
+    font-size: 14px;
   }
 }
 
@@ -564,6 +577,7 @@ audio {
   }
   .modal-window {
     width: 378px;
+
     margin-left: auto;
     margin-right: auto;
   }
@@ -593,14 +607,15 @@ audio {
     height: 170px;
   }
   .btn {
-    bottom: -68px;
+    bottom: -88px;
   }
   .sentance {
     height: 240px;
-    width: 500px;
+    width: 250px;
   }
   .sentance p {
-    font-size: 13px;
+    padding: 16px;
+    font-size: 12px;
   }
 }
 
@@ -641,6 +656,75 @@ audio {
     width: 156px;
     height: 103px;
   }
+  /* modal */
+  .input-box {
+    width: 280px;
+    height: 490px;
+    line-height: 14px;
+    margin-top: -100px;
+  }
+  .modal-window {
+    width: 278px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hr-modal {
+    width: 181px;
+    top: 64px;
+  }
+  #modal .close-area {
+    margin-left: 250px;
+  }
+  .radio img {
+    height: 90px;
+  }
+  .info {
+    width: 222px;
+    height: 310px;
+    bottom: 19px;
+  }
+  .info-title {
+    font-size: 15px;
+    margin-bottom: -13px;
+  }
+  .sender {
+    font-size: 14px;
+  }
+  audio {
+    width: 330px;
+    height: 60px;
+  }
+  .musicNote {
+    height: 138px;
+  }
+
+  .sentance {
+    height: 220px;
+    width: 190px;
+  }
+  .sentance p {
+    padding: 16px;
+    margin-left: 0px;
+    font-size: 8px;
+  }
+  .btn {
+    bottom: -68px;
+  }
+  .message {
+    height: 37px;
+    width: 120px;
+    font-size: 12px;
+    bottom: 6px;
+    margin-right: 10px;
+    border-radius: 8px;
+  }
+
+  #stopButton {
+    height: 37px;
+    font-size: 12px;
+    bottom: 6px;
+    z-index: 10;
+  }
 }
 
 @media (max-width: 468px) {
@@ -648,7 +732,7 @@ audio {
     width: 390px;
   }
   .bookcover {
-    height: 750px;
+    height: 700px;
   }
 
   .radio_bttn {
