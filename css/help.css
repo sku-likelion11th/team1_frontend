@@ -20,6 +20,7 @@
   list-style: none;
   text-align: center;
   width: 860px;
+  z-index: 1600;
 }
 
 /* help - hamburger */
@@ -147,6 +148,15 @@
   top: 0;
   transform: rotate(-135deg);
 }
+.helpvideo{
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+  width: 900px;
+}
 
 /* 미디어쿼리 */
 @media (max-width: 1299px) {
@@ -166,12 +176,18 @@
     height: 2rem;
     width: 2rem;
   }
+  .helpvideo{
+  width: 760px;
+}
 }
 
 @media (max-width: 1199px) {
   .help {
     margin-right: 65px;
   }
+  .helpvideo{
+  width: 760px;
+}
 }
 @media (max-width: 992px) {
   .help {
@@ -180,19 +196,31 @@
   .helpTv {
     width: 630px;
   }
+  .helpvideo{
+  width: 630px;
+}
 }
 @media (max-width: 767px) {
   .helpTv {
     width: 458px;
   }
+   .helpvideo{
+  width: 458px;
+}
 }
 @media (max-width: 570px) {
   .helpTv {
     width: 360px;
   }
+   .helpvideo{
+  width: 360px;
+}
 }
 @media (max-width: 468px) {
   .helpTv {
     width: 300px;
   }
+   .helpvideo{
+  width: 300px;
+}
 }
