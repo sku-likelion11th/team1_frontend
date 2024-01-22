@@ -1,6 +1,6 @@
 ## 🖥️ 프로젝트 소개
 
-"복잡한 기능으로 구성되고, 시각 의존적인 기존 sns를 디지털 약자를 위한 청각 중심으로 보완한 서비스로, 테이프로 마음을 담아 메세지를 보내고 음성과 bgm으로 확인할 수 있는 TTS를 기반으로 한 편지 보내기 서비스" 입니다. [발표 PPT 링크](https://www.canva.com/design/DAFrsFPENYs/07qZoXXaTdXAgcFoLGbSzA/edit?utm_content=DAFrsFPENYs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+"복잡한 기능으로 구성되고, 시각 의존적인 기존 sns를 디지털 약자를 위한 청각 중심으로 보완한 서비스로, 테이프로 마음을 담아 메세지를 보내고 음성과 bgm으로 확인할 수 있는 TTS를 기반으로 한 편지 보내기 서비스" 입니다. <br>[발표 PPT 링크](https://www.canva.com/design/DAFrsFPENYs/07qZoXXaTdXAgcFoLGbSzA/edit?utm_content=DAFrsFPENYs&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ## 🎀 팀원
 
@@ -14,12 +14,7 @@
 
 ## ⚙️ 기술 스택
 
-  <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
-  <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> 
-  <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> 
-  <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
-
-<br>
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/Vanilla JS-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 
 ## 🗒️ 구현 항목
 
